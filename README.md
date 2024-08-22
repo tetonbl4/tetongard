@@ -2,7 +2,7 @@
 
 2 way to istall Tetongard  //  Есть 2 способа установки патча. Выбирайте, какой вам удобнее.
 
-#  Easy way // Элементарый
+#  Easy way // Элементарный
 
 Download the archive // Скачать архив [tetongard_V1.2.rar](https://drive.google.com/file/d/1999SjV7WmwKtLndrhlXaFQIwPLrsLnXe/view?usp=sharing)
    
