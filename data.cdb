@@ -7215,13 +7215,13 @@
 							"comments": "Defense bonus during cast time"
 						},
 						{
-							"val": 0.5,
+							"val": 0.25,
 							"id": 0,
 							"props": {},
 							"comments": "Attack Bonus with Fame 2"
 						},
 						{
-							"val": 1,
+							"val": 0.5,
 							"id": 1,
 							"props": {},
 							"comments": "Factor Loot "
