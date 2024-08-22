@@ -4,7 +4,7 @@
 
 #  Easy way // Элементарый
 
-Download the archive // Скачать архив [tetonkagard1.1.rar](https://drive.google.com/file/d/1hUzsXQ1R5q6rXeDOFK9w4BX1Vnsdu3hF/view?usp=drive_link) 
+Download the archive // Скачать архив [tetongard_V1.2.rar](https://drive.google.com/file/d/1999SjV7WmwKtLndrhlXaFQIwPLrsLnXe/view?usp=sharing)
    
 Paste the res.pak in folder of the game // Скопировать файл res.pak из архива в папку с игрой
 
@@ -12,13 +12,11 @@ Paste the res.pak in folder of the game // Скопировать файл res.p
 
 Download my data.cbd // Скачать мой файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
 
-Download // Скачать [QuickBMS](https://aluigi.altervista.org/papers/quickbms.zip) 
-   
-Download // Скачать [northgard_res_pak.bms](https://drive.google.com/file/d/1_UqWCUoWvQw_LWCGJVuB0_lAblkzciiG/view?usp=drive_link) 
+Download // Скачать [QuickBMS](https://drive.google.com/drive/folders/1QZfT5OBuEWWo8MX5duatxdez9rh39yqN?usp=sharing)
 
 Open reimport.bat // Запустить файл reimport.bat
 
-Choose reimport.bat // В окне reimport.bat выбрать northgard_res_pak.bms
+Choose northgard_res_pak.bms // В окне reimport.bat выбрать northgard_res_pak.bms
 
 Choose res.pak in game folder // Потом выбрать res.pak в папке с игрой (steam/steamapps/common/northgard)
 
