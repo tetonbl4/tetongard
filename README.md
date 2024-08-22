@@ -10,7 +10,7 @@ Paste the res.pak in folder of the game // Скопировать файл res.p
 
 # MegaMind // Сверхинтеллект
 
-Download my data.cbd // Скачать мой файл [data.cbd](https://drive.google.com/file/d/1TV5xzXf0fHSDGVryg_-suIXeKNZWOdwJ/view?usp=drive_link) 
+Download my data.cbd // Скачать мой файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
 
 Download // Скачать [QuickBMS](https://aluigi.altervista.org/papers/quickbms.zip) 
    
@@ -32,6 +32,7 @@ If you'd like to have original rules back, just restore the game via Steam // Ч
 # CHANGES: // Изменения: 
 
 -Starting population = 4 -> 6 pop
+Rat's and Dragon's starting pop was reworked also
 
 -Town hall population = 6 -> 8 pop
 
@@ -83,7 +84,7 @@ If you'd like to have original rules back, just restore the game via Steam // Ч
 ----------------------------------------------------------------
 # WOLF
 
--"Field Rations" replaced "eradication" = 0.75 value -> 0.4
+-"Field Rations" replaced "eradication" = 0.75 value -> 0.6
 
 -"Spoils of War" = +50 mil exp -> +250
 
@@ -186,6 +187,18 @@ If you'd like to have original rules back, just restore the game via Steam // Ч
 # SNAKE
 
 -"Rapacious Exploitation" = value +1.5 -> +1
+
+-"ScorchedEarth" gives 50% less resources
+
+-"18 Age: Tears of the earth" = attack bonus +50% -> +25% 
+
+----------------------------------------------------------------
+# RAT
+-"Overcrowding" replaced "eradication"
+
+-"Healing Fire" replaced "ShinyHappyPeople"
+
+-200 fame bonus = -30% food consumption -> -20%
 
 ----------------------------------------------------------------
 # SQUIRREL
