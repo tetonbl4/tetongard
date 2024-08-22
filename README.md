@@ -1,7 +1,5 @@
 # Tetongard v1.1
 
-second patch of northgard is ["801Gard"](https://github.com/i7ok/801Gard)
-
 2 way to istall Tetongard  //  Есть 2 способа установки патча. Выбирайте, какой вам удобнее.
 
 #  Easy way // Элементарый
