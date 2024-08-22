@@ -1,4 +1,4 @@
-# Tetongard v1.1
+# Tetongard v1.2
 
 2 way to istall Tetongard  //  Есть 2 способа установки патча. Выбирайте, какой вам удобнее.
 
