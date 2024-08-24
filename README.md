@@ -82,7 +82,7 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # WOLF
 
--"Field Rations" replaced "eradication" = 0.75 value -> 0.6
+-"Field Rations" replaced "eradication" = -75% -> -60%
 
 -"Spoils of War" = +50 mil exp -> +250
 
@@ -100,13 +100,13 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # BEAR
 
--"Shield Mastery" replaced "Military Strategy" = +5% defense -> +15%(***)
+-"Shield Mastery" replaced "Military Strategy" = +5% defense -> +15%
 
 -"Harpoons" replaced "Eradication" = +30% -> +20%
 
 -200 fame bonus = +15% production -> +25%
 
--200 fame bonus switched with 500 fame bonus***
+-200 fame bonus switched with 500 fame bonus
 
 ----------------------------------------------------------------
 # BOAR
@@ -125,6 +125,10 @@ Rat's and Dragon's starting pop was reworked also
 # DRAGON
 
 -"Blood, Sweat & Tears" = 1 extra thrall -> 2 extra thralls
+
+-"Capture" replaced "Defensive strategy"
+
+-"Draconic Rage" replaced "Military Strategy"
 
 -Dragonkin base cost = 40 -> 35 gold
 
@@ -154,6 +158,8 @@ Rat's and Dragon's starting pop was reworked also
 
 -"Steelwork" = +5% -> +2.5%
 
+-"Chanson de Geste" replaced "Fur coats"
+
 ----------------------------------------------------------------
 # OWL
 
@@ -162,6 +168,10 @@ Rat's and Dragon's starting pop was reworked also
 -"Creeping Vines" = +0.15 (0.35) -> = +0.15 (0.25)
 
 -"Parasitic Vegetables" = 0.33 -> 0.25 consumption, gain ratio = 4 -> 2
+
+-Owl warchiefs Verdandi and Uld was rebalanced
+	Verdandi = +5% boost production (+5% per branch) -> +10% (+2.5% per branch)
+	Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch) 
 
 ----------------------------------------------------------------
 # HOUND
@@ -172,6 +182,8 @@ Rat's and Dragon's starting pop was reworked also
 
 ----------------------------------------------------------------
 # RAVEN
+
+-"Gear Upgrade" replaced "Military strategy" = +4% (20%) -> +2% (15%)
 
 -Chief hire no more cost iron, but 200 gold
 
@@ -205,7 +217,7 @@ Rat's and Dragon's starting pop was reworked also
 
 -200 fame bonus = -> meal for allies -50% -> -25%
 
--"Cooking Mastery" = -20% meal food cost -> -40%
+-"Cooking Mastery" = -20% meal food cost -> -30%
 
 Meals changes:
 
