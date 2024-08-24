@@ -2933,12 +2933,12 @@
 					"kind": 1,
 					"values": [
 						{
-							"val": 0.04,
+							"val": 0.02,
 							"id": 0,
 							"comments": "% atk & def bonus per active sailor/merchant"
 						},
 						{
-							"val": 0.2,
+							"val": 0.15,
 							"id": 3,
 							"comments": "% weapon improvement reduction"
 						}
@@ -4180,7 +4180,7 @@
 					"desc": "[Meal] have improved effects.\n[Meal] [Food] cost is reduced by ::percent::.",
 					"values": [
 						{
-							"val": 1.4,
+							"val": 1.3,
 							"id": 0,
 							"comments": "bonus food cost"
 						},
@@ -29899,12 +29899,12 @@
 						{
 							"values": [
 								{
-									"val": 0.05,
+									"val": 0.025,
 									"id": 0,
 									"comment": "Prod & Branch effect boost per branch"
 								},
 								{
-									"val": 0.05,
+									"val": 0.1,
 									"id": 1,
 									"comment": "Start boost"
 								}
@@ -29938,12 +29938,12 @@
 						{
 							"values": [
 								{
-									"val": 1,
+									"val": 0.5,
 									"id": 0,
 									"comment": "Lore prod per branch"
 								},
 								{
-									"val": 1,
+									"val": 2,
 									"id": 1,
 									"comment": "Start prod"
 								}
@@ -53645,7 +53645,7 @@
 					],
 					"values": [
 						{
-							"val": 10,
+							"val": 8,
 							"id": 0,
 							"props": {
 								"res": "Population",
@@ -70088,7 +70088,7 @@
 						},
 						{
 							"newTech": "Capture",
-							"oldTech": "MilitaryStrategy"
+							"oldTech": "Defense"
 						},
 						{
 							"newTech": "BloodTears",
@@ -70099,7 +70099,7 @@
 							"oldTech": "Weaponsmith"
 						},
 						{
-							"oldTech": "MonsterSlayer",
+							"oldTech": "MilitaryStrategy",
 							"newTech": "WinnerSide"
 						}
 					],
@@ -71513,7 +71513,7 @@
 						},
 						{
 							"newTech": "HolyWar",
-							"oldTech": "MonsterSlayer"
+							"oldTech": "Coats"
 						},
 						{
 							"newTech": "Armory",
