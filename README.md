@@ -4,7 +4,7 @@
 
 #  Easy way
 
-Download the archive // Скачать архив [tetongard_V1.2.rar](https://drive.google.com/file/d/1999SjV7WmwKtLndrhlXaFQIwPLrsLnXe/view?usp=sharing)
+Download the archive // Скачать архив [tetongard_V1.3.rar](https://drive.google.com/file/d/1999SjV7WmwKtLndrhlXaFQIwPLrsLnXe/view?usp=sharing)
    
 Paste the res.pak in folder of the game // Скопировать файл res.pak из архива в папку с игрой
 
