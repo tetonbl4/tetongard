@@ -1,18 +1,20 @@
 # Tetongard v1.3
 
-2 way to istall Tetongard  //  Есть 2 способа установки патча. Выбирайте, какой вам удобнее.
+2 way to istall Tetongard
 
-#  Easy way // Элементарный
+#  Easy way
 
 Download the archive // Скачать архив [tetongard_V1.2.rar](https://drive.google.com/file/d/1999SjV7WmwKtLndrhlXaFQIwPLrsLnXe/view?usp=sharing)
    
 Paste the res.pak in folder of the game // Скопировать файл res.pak из архива в папку с игрой
 
-# MegaMind // Сверхинтеллект
+# MegaMind (recommended way)
 
-Download my data.cbd // Скачать мой файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
+Download data.cbd // Скачать файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
 
 Download // Скачать [QuickBMS](https://drive.google.com/drive/folders/1QZfT5OBuEWWo8MX5duatxdez9rh39yqN?usp=sharing)
+
+*personally, I would recommend that you move all the files to the game folder (create a modded folder there or something)
 
 Open reimport.bat // Запустить файл reimport.bat
 
@@ -20,14 +22,14 @@ Choose northgard_res_pak.bms // В окне reimport.bat выбрать northgar
 
 Choose res.pak in game folder // Потом выбрать res.pak в папке с игрой (steam/steamapps/common/northgard)
 
-Choose my data.cbd // Потом выбрать скаченный файл data.cbd
+Choose data.cbd // Потом выбрать скачанный файл data.cbd
 
-# Congratulation // Поздравляю, 
-Your northgard is patched and you can host p2p lobbys with your rules // Норт пропатчен и теперь у вас всегда измененные правила если вы хост лобби.
+# Congratulation
+Your northgard is patched and you can host p2p lobbys with your rules
 
-If you'd like to have original rules back, just restore the game via Steam // Чтобы вернуть нортгард обратно к оригиналу, замените файл res.pak обратно на оригинальный или восстановите игру через steam
+If you'd like to have original rules back, just restore the game via Steam
 
-# CHANGES: // Изменения: 
+# CHANGES:
 
 -Starting population = 4 -> 6 pop
 Rat's and Dragon's starting pop was reworked also
@@ -66,6 +68,10 @@ Rat's and Dragon's starting pop was reworked also
 
 -Camp upgrade cost = 5 stone -> 10 stone
 
+-Fort costs no more gold (only 50 wood)
+
+-Recruiting lord cost = 50 gold 
+
 -Lodge camp upgrade cost = 100 wood -> 50 wood
 
 -Church building cost = 50 gold -> 25 gold
@@ -100,7 +106,7 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # BEAR
 
--"Shield Mastery" replaced "Military Strategy" = +5% defense -> +15%
+-"Shield Mastery" replaced "Military Strategy" = +5% defense -> +10%
 
 -"Harpoons" replaced "Eradication" = +30% -> +20%
 
@@ -111,9 +117,10 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # BOAR
 
--"Herbalism" = all value -> X2
+-"Herbalism" = healing boost +20% -> 40%
+		lore boost production +10% -> +15%
 
--"Legacy" = +50% -> +75%
+-"Osmosis" replaced "Colonization"
 
 -Relic Mask of Gullinbursti = +6 food -> +10 food
 
@@ -142,9 +149,11 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # KRAKEN
 
--"Road To Valhalla" = valkirie cost 120 gold -> 90 gold
+-starting ghost was removed 
 
--"Valhalla's reinforcement" = 1 valkyrie -> 2 valkyrie 
+-"Road To Valhalla" = valkyrie cost 120 gold -> 90 gold
+
+-Valkyrie gives only -1 wyrd
 
 ----------------------------------------------------------------
 # OX
@@ -176,10 +185,17 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # HOUND
 
+-converting military experience into a resource was reduced (around 30%)
+
+*an attempt to give much importance to the economy of the hound and as well as changing the 
+focus of the gameplay from forcing the number of berserkers instead of the number of brawlers 
+and their subsequent return to the economy
+
 -"Living Legends" = feast cost reduction 10% -> 17.5%
 
--"Heavy Workforce" = +50% -> +100%
+-"Heavy Workforce" = +50% -> +70%
 
+-200 fame bonus = souls of dead berserkers grants 50% exp -> 80%
 ----------------------------------------------------------------
 # RAVEN
 
@@ -233,3 +249,7 @@ Meals changes:
 # STOAT
 
 -Monkh production in a lore stone = 2 lore -> 2.5 lore
+
+-Duchy workers consumption = 25% -> 40%
+
+-"Mutual Effort" replaced "Negotiation"
