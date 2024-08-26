@@ -3097,7 +3097,7 @@
 					"kind": 1,
 					"values": [
 						{
-							"val": 1.15,
+							"val": 1.1,
 							"id": 0
 						}
 					]
@@ -3212,7 +3212,7 @@
 					},
 					"values": [
 						{
-							"val": 1.1,
+							"val": 1.05,
 							"id": 0,
 							"comments": "Production in hut's zone per Mender"
 						},
@@ -3222,7 +3222,7 @@
 							"comments": "Healing speed increase"
 						},
 						{
-							"val": 1.2,
+							"val": 1.15,
 							"id": 12,
 							"comments": "Production in hut's zone per Mender for Lore"
 						}
@@ -3267,12 +3267,12 @@
 					},
 					"values": [
 						{
-							"val": 1.75,
+							"val": 1.5,
 							"id": 0,
 							"comments": "prod multiplier"
 						},
 						{
-							"val": 1.75,
+							"val": 1.5,
 							"id": 3,
 							"comments": "happy multiplier"
 						}
@@ -3787,12 +3787,12 @@
 					"desc": "You can control ::value:: more [NornArmor].\n[NornArmor]s and [Kara] regeneration increases by ::percent1:: and is also active on [HighTide] zones.",
 					"values": [
 						{
-							"val": 2,
+							"val": 1,
 							"id": 0,
 							"comments": ""
 						},
 						{
-							"val": 2,
+							"val": 1,
 							"id": 3
 						}
 					],
@@ -4998,7 +4998,7 @@
 					"desc": "[PackBrawler]s can be assigned to production buildings. They produce +::percent_value:: more than civilans and benefit from forged tools.",
 					"values": [
 						{
-							"val": 1,
+							"val": 0.7,
 							"id": 0
 						}
 					],
@@ -5823,7 +5823,7 @@
 							"comments": "XP Boost"
 						},
 						{
-							"val": 0.5,
+							"val": 0.8,
 							"id": 3,
 							"comments": "XP Transferred"
 						}
@@ -7359,7 +7359,7 @@
 					"cost": [
 						{
 							"r": "Prescience",
-							"q": 3
+							"q": 1
 						},
 						{
 							"r": "Money",
@@ -8041,7 +8041,7 @@
 					"cost": [
 						{
 							"r": "Money",
-							"q": 25
+							"q": 50
 						}
 					],
 					"flags": 257
@@ -27026,7 +27026,7 @@
 									"res": "HuntTrophy"
 								},
 								{
-									"qty": 5,
+									"qty": 15,
 									"res": "Money",
 									"reqTech": "Pillage"
 								}
@@ -27039,7 +27039,7 @@
 					"props": {
 						"recruitCost": [
 							{
-								"qty": 45,
+								"qty": 30,
 								"res": "Money"
 							}
 						],
@@ -27099,12 +27099,12 @@
 									"comment": "Added defence per level up"
 								},
 								{
-									"val": 0.75,
+									"val": 0.57,
 									"id": 7,
 									"comment": "XP to Wood",
 									"dyn": {
 										"res": "Wood",
-										"ratio": 0.75,
+										"ratio": 0.57,
 										"max": 80
 									}
 								}
@@ -27182,12 +27182,12 @@
 									"comment": "Added attack power per level up"
 								},
 								{
-									"val": 0.75,
+									"val": 0.57,
 									"id": 7,
 									"comment": "XP to Food",
 									"dyn": {
 										"res": "Food",
-										"ratio": 0.75,
+										"ratio": 0.57,
 										"max": 80
 									}
 								}
@@ -27275,12 +27275,12 @@
 									"comment": "Added range per level up"
 								},
 								{
-									"val": 0.5,
+									"val": 0.38,
 									"id": 7,
 									"comment": "XP to Money",
 									"dyn": {
 										"res": "Money",
-										"ratio": 0.5,
+										"ratio": 0.38,
 										"max": 80
 									}
 								}
@@ -27348,12 +27348,12 @@
 									"comment": "Added health per level up"
 								},
 								{
-									"val": 0.5,
+									"val": 0.38,
 									"id": 7,
 									"comment": "XP to Lore",
 									"dyn": {
 										"res": "Lore",
-										"ratio": 0.5,
+										"ratio": 0.38,
 										"max": 80
 									}
 								}
@@ -51529,10 +51529,6 @@
 						{
 							"r": "Wood",
 							"q": 50
-						},
-						{
-							"r": "Money",
-							"q": 20
 						}
 					],
 					"values": [
@@ -51720,10 +51716,6 @@
 						{
 							"r": "Wood",
 							"q": 50
-						},
-						{
-							"r": "Money",
-							"q": 20
 						}
 					],
 					"values": [
@@ -53653,7 +53645,7 @@
 							},
 							"upgradedVals": [
 								{
-									"val": 10
+									"val": 8
 								}
 							]
 						},
@@ -69741,7 +69733,7 @@
 						},
 						{
 							"newTech": "Osmosis",
-							"oldTech": "Negociate"
+							"oldTech": "Colonize"
 						}
 					],
 					"fame": [
@@ -70229,7 +70221,7 @@
 					"specificTechs": [
 						{
 							"newTech": "Metalcraft",
-							"oldTech": "Colonize"
+							"oldTech": "Recruit"
 						},
 						{
 							"newTech": "BFTower",
@@ -70342,7 +70334,7 @@
 							"desc": "You start with ::value:: [SpecterWarrior].\nYou can have more by building [Horgr]s and having negative [Prescience].",
 							"values": [
 								{
-									"val": 1,
+									"val": 0,
 									"id": "CStartSpecter"
 								}
 							]
@@ -70351,7 +70343,7 @@
 							"desc": "[Seeress]s can evolve into [NornArmor]s.",
 							"values": [
 								{
-									"val": 3,
+									"val": 1,
 									"id": "CConsValks"
 								}
 							]
@@ -71588,7 +71580,7 @@
 									"comments": "Variable Y --> Formula: (Nb_Duchies + X) * Y"
 								},
 								{
-									"val": 0.25,
+									"val": 0.4,
 									"id": "CStoatConsumptionFactor"
 								},
 								{
@@ -71735,7 +71727,7 @@
 							"newTech": "BritainMarch"
 						},
 						{
-							"oldTech": "Medecine",
+							"oldTech": "Negociate",
 							"newTech": "MutualEffort"
 						},
 						{
