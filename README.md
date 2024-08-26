@@ -118,7 +118,7 @@ Rat's and Dragon's starting pop was reworked also
 # BOAR
 
 -"Herbalism" = healing boost +20% -> 40%
-		lore boost production +10% -> +15%
+	lore boost production +10% -> +15%
 
 -"Osmosis" replaced "Colonization"
 
@@ -179,8 +179,8 @@ Rat's and Dragon's starting pop was reworked also
 -"Parasitic Vegetables" = 0.33 -> 0.25 consumption, gain ratio = 4 -> 2
 
 -Owl warchiefs Verdandi and Uld was rebalanced
-	Verdandi = +5% boost production (+5% per branch) -> +10% (+2.5% per branch)
-	Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch) 
+Verdandi = +5% boost production (+5% per branch) -> +10% (+2.5% per branch)
+Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch) 
 
 ----------------------------------------------------------------
 # HOUND
@@ -237,11 +237,13 @@ and their subsequent return to the economy
 
 Meals changes:
 
--"Seafood Buffet"   power upgrade meal 400 meat -> 200 meat
-		   duration upgrade meal 200 fish -> 100 fish
+-"Seafood Buffet"
+power upgrade meal 400 meat -> 200 meat
+duration upgrade meal 200 fish -> 100 fish
 
--"Forest Barbecue"  power upgrade meal 400 meat -> 200 meat	
-		   duration upgrade meal 200 Mushrooms -> 100 Mushrooms
+-"Forest Barbecue"
+power upgrade meal 400 meat -> 200 meat	
+duration upgrade meal 200 Mushrooms -> 100 Mushrooms
 
 1 \ 2 \ 3 lvl value = 5% \ 10% \ 15% -> 10% \ 15% \ 20%
 
