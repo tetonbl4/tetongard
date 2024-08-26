@@ -1,6 +1,6 @@
 # Tetongard v1.3
 
-2 way to istall Tetongard
+2 way to install Tetongard
 
 #  Easy way
 
