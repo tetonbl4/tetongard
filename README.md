@@ -168,7 +168,13 @@ Rat's and Dragon's starting pop was reworked also
 
 - "Military Training" = Attack Power bonus +5% -> +2.5%
 
-- "Unstoppable" = Attack and defense bonus +5% -> +10% 
+- "Unstoppable" = Attack and defense bonus +5% -> +10%
+----------------------------------------------------------------
+# LYNX
+
+- "Fire arrows" = proc chance 30% -> 50%
+* fire arrows do not stack their effect with each other, so this will have almost no effect on the combat component
+of the clan, it will simply remove situations in which arrows do not work in battles at small limits
 
 ----------------------------------------------------------------
 # LION
