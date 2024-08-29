@@ -1,14 +1,8 @@
 # Tetongard v1.3
 
-2 way to install Tetongard
+The way to install Tetongard
 
-#  Easy way
-
-Download the archive // Скачать архив [tetongard_V1.3.rar](https://drive.google.com/file/d/1Iwm_tEINk2xDEZ-PFq-1BeNYvFPKvO0i/view?usp=drive_link)
-   
-Paste the res.pak in folder of the game // Скопировать файл res.pak из архива в папку с игрой
-
-# MegaMind (recommended way)
+# installing the bms script and patching
 
 Download data.cbd // Скачать файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
 
