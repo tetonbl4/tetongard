@@ -3487,7 +3487,7 @@
 					"desc": "You can assign ::value:: extra [Slave]s to production buildings and ::value1:: more if upgraded.",
 					"values": [
 						{
-							"val": 2,
+							"val": 1,
 							"id": 0
 						},
 						{
@@ -8554,7 +8554,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 0.8,
+							"val": 0.7,
 							"id": 0,
 							"props": {}
 						}
@@ -8577,7 +8577,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 0.75,
+							"val": 0.7,
 							"id": 0,
 							"props": {}
 						}
@@ -8600,7 +8600,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 2,
+							"val": 1.5,
 							"id": 0,
 							"props": {}
 						}
@@ -10239,7 +10239,7 @@
 							"comments": "Maximum duration of the pyre."
 						},
 						{
-							"val": 1.15,
+							"val": 1.1,
 							"id": 1,
 							"props": {},
 							"comments": "Pop Growth per pyre"
@@ -12293,7 +12293,7 @@
 							"comments": "Damage multiplier on buildings"
 						},
 						{
-							"val": 0.3,
+							"val": 0.5,
 							"id": 12,
 							"props": {},
 							"comments": "proc chance"
@@ -24640,7 +24640,7 @@
 					"produce": [
 						{
 							"r": "Prescience",
-							"q": 3,
+							"q": 3.1,
 							"props": {
 								"showUi": true
 							},
@@ -50647,11 +50647,15 @@
 								},
 								{
 									"res": "Money",
-									"qty": 50
+									"qty": 25
 								},
 								{
 									"res": "Stone",
 									"qty": 10
+								},
+								{
+									"res": "Blood",
+									"qty": 1
 								}
 							],
 							"desc": "Gain +::value::[Warband] and increase your [Dragonmen]s' attack by ::percent_value1::.",
@@ -69950,7 +69954,7 @@
 									"id": "CBloodDecreaseSpeedHigher"
 								},
 								{
-									"val": 0.2,
+									"val": 0.3,
 									"id": "CProductionBonusPerSegment"
 								},
 								{
