@@ -3885,7 +3885,7 @@
 							"comments": "training camp upgrade cost"
 						},
 						{
-							"val": 1.025,
+							"val": 1.05,
 							"id": 12,
 							"comments": "% Attack Power bonus on camp upgrade"
 						}
