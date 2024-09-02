@@ -142,8 +142,6 @@ Rat's and Dragon's starting pop was reworked also
 
 - Upgrade "dragonkin altar" cost = 50 gold -> 25 gold + 1 blood essence
 
-- Dragonkin base cost = 40 -> 35 gold
-
 ----------------------------------------------------------------
 # HORSE
 
@@ -165,6 +163,10 @@ Rat's and Dragon's starting pop was reworked also
 
 ----------------------------------------------------------------
 # OX
+
+- attack and defense bonus for military = +15% -> 10%
+
+- "Military training" = -30% cost value -> -20%
 
 - "Unstoppable" = Attack and defense bonus +5% -> +10%
 ----------------------------------------------------------------
@@ -230,6 +232,8 @@ and their subsequent return to the economy
 
 - "18 Age: Tears of the earth" = attack bonus +50% -> +25% 
 
+- Skirmisher camp upgrade cost = 100 wood -> 50 wood
+
 ----------------------------------------------------------------
 # RAT
 - "Overcrowding" replaced "eradication"
@@ -247,7 +251,7 @@ and their subsequent return to the economy
 
 - 200 fame bonus = -> meal for allies -50% -> -25%
 
-- "Cooking Mastery" = -20% meal food cost -> -30%
+- "Cooking Mastery" = -20% meal food cost -> -40%
 
 Meals changes:
 
