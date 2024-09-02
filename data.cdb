@@ -4575,7 +4575,7 @@
 							"comments": "cd reduc on military upgrades"
 						},
 						{
-							"val": 0.5,
+							"val": 1,
 							"id": 3,
 							"comments": "trigger chance bonus"
 						}
@@ -4901,7 +4901,7 @@
 							"comments": "Every X of a resource, you gain (Value3 / resource.tracePrice) per Norn"
 						},
 						{
-							"val": 2,
+							"val": 3,
 							"id": 12,
 							"comments": "Gain ratio"
 						},
@@ -7095,7 +7095,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 1,
+							"val": 2,
 							"id": 8,
 							"props": {
 								"dataType": 1
@@ -7949,7 +7949,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 1,
+							"val": 2,
 							"id": 8,
 							"props": {}
 						}
@@ -69293,7 +69293,7 @@
 						},
 						{
 							"newTech": "MoreBuildings",
-							"oldTech": "BetterSilo"
+							"oldTech": "Mining"
 						},
 						{
 							"newTech": "Barricades",
@@ -71440,7 +71440,7 @@
 							"desc": "Killing a foe generates [Faith] if [LionHero] takes part in the fight.",
 							"values": [
 								{
-									"val": 0.33,
+									"val": 0.5,
 									"id": "CFaithWhenKilling",
 									"comments": "Factor between military exp and faith"
 								}
@@ -71455,7 +71455,7 @@
 									"comments": "factor => 2 krowns = 1 faith"
 								},
 								{
-									"val": 2,
+									"val": 1.75,
 									"id": "CFaithRecruitFactorMax"
 								},
 								{
