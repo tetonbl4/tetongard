@@ -111,6 +111,13 @@ Rat's and Dragon's starting pop was reworked also
 - "Glory of the Clan" = +30% fame -> +15% fame
 
 ----------------------------------------------------------------
+# GOAT
+
+- "Amenities" replaced "Mining efficiency"
+
+- Halvard's "Shepherd" ability cd = 1 month -> 2 months
+
+----------------------------------------------------------------
 # BEAR
 
 - "Shield Mastery" replaced "Military Strategy" = +5% defense -> +10%
@@ -145,7 +152,7 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # HORSE
 
-- "Völund Fire" = +5% -> +10%
+- "Völund Fire" replaced "Recruitment", forged tools bonus value = +5% -> +10%
 
 - "Völund Forge" cost upgrade = 100 wood -> 50 wood 
 
@@ -181,7 +188,14 @@ of the clan, it will simply remove situations in which arrows do not work in bat
 
 - "Steelwork" = +5% -> +2.5%
 
+- "Marchfield" trigger chance bonus = +5% -> +10%
+
+- Faith generation from killing a foe = +60% (0.33 conversion from military exp -> 0.5)
+
 - "Chanson de Geste" replaced "Fur coats"
+
+- maximum cost reduction by faith = 100% -> 75%
+* It means the Lion need to take only 5 lores to get max cost reduction instead of 7 
 
 ----------------------------------------------------------------
 # OWL
@@ -190,7 +204,7 @@ of the clan, it will simply remove situations in which arrows do not work in bat
 
 - "Creeping Vines" = +0.15 (0.35) -> = +0.15 (0.25)
 
-- "Parasitic Vegetables" = 0.33 -> 0.25 consumption, gain ratio = 4 -> 2
+- "Parasitic Vegetables" = 0.33 -> 0.25 consumption, gain ratio = 4 -> 3
 
 - Owl warchiefs Verdandi and Uld was rebalanced
 Verdandi = +5% boost production (+5% per branch) -> +10% (+2.5% per branch)
@@ -236,6 +250,7 @@ and their subsequent return to the economy
 
 ----------------------------------------------------------------
 # RAT
+
 - "Overcrowding" replaced "eradication"
 
 - "Healing Fire" replaced "ShinyHappyPeople"
@@ -243,6 +258,11 @@ and their subsequent return to the economy
 - 200 fame bonus = -30% food consumption -> -20%
 
 - "Purification pyre" = +15% recruitment speed -> +10%
+
+----------------------------------------------------------------
+# EAGLE
+
+- "Sentinel" = value x1 -> x2
 
 ----------------------------------------------------------------
 # SQUIRREL
