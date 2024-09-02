@@ -164,7 +164,7 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # OX
 
-- attack and defense bonus for military = +15% -> 10%
+- attack and defense bonus for military units = +15% -> 10%
 
 - "Military training" = -30% cost value -> -20%
 
