@@ -181,6 +181,7 @@ Rat's and Dragon's starting pop was reworked also
 # LYNX
 
 - "Fire arrows" = proc chance 30% -> 50%
+
 *fire arrows do not stack their effect with each other, so this will have almost no effect on the combat component
 of the clan, it will simply remove situations in which arrows do not work in battles at small limits
 
@@ -215,6 +216,7 @@ Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch)
 # HOUND
 
 - converting military experience into a resource was reduced (around 30%)
+
 
 *an attempt to give much importance to the economy of the hound and as well as changing the 
 focus of the gameplay from forcing the number of berserkers instead of the number of brawlers 
