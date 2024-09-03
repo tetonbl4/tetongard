@@ -266,7 +266,7 @@ and their subsequent return to the economy
 ----------------------------------------------------------------
 # EAGLE
 
-- "Sentinel" = value x1 -> x2
+- nothing
 
 ----------------------------------------------------------------
 # SQUIRREL
