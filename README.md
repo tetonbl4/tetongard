@@ -197,6 +197,7 @@ of the clan, it will simply remove situations in which arrows do not work in bat
 - "Chanson de Geste" replaced "Fur coats"
 
 - maximum cost reduction by faith = 100% -> 75%
+
 *It means the Lion need to take only 5 lores to get max cost reduction instead of 7 
 
 ----------------------------------------------------------------
