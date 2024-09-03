@@ -162,7 +162,7 @@ Rat's and Dragon's starting pop was reworked also
 - starting ghost was removed
 
 - Seeresses production = 3 wyrd -> 3.1 wyrd
-* an attempt to remove the situation with 4.9 wyrd with the loss of the fish production boost 
+\\ an attempt to remove the situation with 4.9 wyrd with the loss of the fish production boost 
 
 - "Road To Valhalla" = valkyrie cost 120 gold -> 90 gold
 
@@ -180,7 +180,7 @@ Rat's and Dragon's starting pop was reworked also
 # LYNX
 
 - "Fire arrows" = proc chance 30% -> 50%
-* fire arrows do not stack their effect with each other, so this will have almost no effect on the combat component
+\\ fire arrows do not stack their effect with each other, so this will have almost no effect on the combat component
 of the clan, it will simply remove situations in which arrows do not work in battles at small limits
 
 ----------------------------------------------------------------
@@ -195,7 +195,7 @@ of the clan, it will simply remove situations in which arrows do not work in bat
 - "Chanson de Geste" replaced "Fur coats"
 
 - maximum cost reduction by faith = 100% -> 75%
-* It means the Lion need to take only 5 lores to get max cost reduction instead of 7 
+\\ It means the Lion need to take only 5 lores to get max cost reduction instead of 7 
 
 ----------------------------------------------------------------
 # OWL
@@ -215,7 +215,7 @@ Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch)
 
 - converting military experience into a resource was reduced (around 30%)
 
-*an attempt to give much importance to the economy of the hound and as well as changing the 
+\\ an attempt to give much importance to the economy of the hound and as well as changing the 
 focus of the gameplay from forcing the number of berserkers instead of the number of brawlers 
 and their subsequent return to the economy
 
