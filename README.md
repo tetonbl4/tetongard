@@ -162,7 +162,7 @@ Rat's and Dragon's starting pop was reworked also
 - starting ghost was removed
 
 - Seeresses production = 3 wyrd -> 3.1 wyrd
-\\ an attempt to remove the situation with 4.9 wyrd with the loss of the fish production boost 
+// an attempt to remove the situation with 4.9 wyrd with the loss of the fish production boost 
 
 - "Road To Valhalla" = valkyrie cost 120 gold -> 90 gold
 
