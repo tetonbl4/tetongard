@@ -71455,11 +71455,11 @@
 									"comments": "factor => 2 krowns = 1 faith"
 								},
 								{
-									"val": 1.75,
+									"val": 2,
 									"id": "CFaithRecruitFactorMax"
 								},
 								{
-									"val": 1,
+									"val": 1.25,
 									"id": "CFaithRecruitFactorMin"
 								}
 							]
