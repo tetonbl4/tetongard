@@ -37,6 +37,8 @@ Rat's and Dragon's starting pop was reworked also
 
 - Woodlodge upgrade cost = 10 stone -> 5 stone
 
+- Fox den gives less gold = 75 gold -> 50 gold
+
 ----------------------------------------------------------------
 # RELIC BALANCED:
 
@@ -177,6 +179,7 @@ Rat's and Dragon's starting pop was reworked also
 - "Military training" = -30% cost value -> -20%
 
 - "Unstoppable" = Attack and defense bonus +5% -> +10%
+
 ----------------------------------------------------------------
 # LYNX
 
