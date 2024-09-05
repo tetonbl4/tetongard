@@ -69288,11 +69288,11 @@
 							"oldTech": "Recruit"
 						},
 						{
-							"newTech": "FreeTools",
+							"newTech": "MoreBuildings",
 							"oldTech": "Colonize"
 						},
 						{
-							"newTech": "MoreBuildings",
+							"newTech": "FreeTools",
 							"oldTech": "Mining"
 						},
 						{
