@@ -27,7 +27,7 @@ If you'd like to have original rules back, just restore the game via Steam
 # CHANGES:
 
 - Starting population = 4 -> 6 pop
-- 
+  
 Rat's and Dragon's starting pop was reworked also
 
 - Town hall population = 6 -> 8 pop
