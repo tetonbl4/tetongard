@@ -23,6 +23,8 @@ Your northgard is patched and you can host p2p lobbys with your rules
 
 If you'd like to have original rules back, just restore the game via Steam
 
+# Other modifications from partners:
+https://github.com/i7ok/801Gard
 ----------------------------------------------------------------
 # CHANGES:
 
