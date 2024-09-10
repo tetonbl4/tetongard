@@ -301,3 +301,10 @@ duration upgrade meal 200 Mushrooms -> 100 Mushrooms
 - Duchy workers consumption = 25% -> 40%
 
 - "Mutual Effort" replaced "Negotiation"
+
+----------------------------------------------------------------
+# BUGFIXES
+
+- Hound's berserkers now gives 25 gold to the Wolf Clan with lore "spoils of war" instead of 5 gold
+- tamed boar move speed fixed
+- 
