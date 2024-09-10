@@ -1,4 +1,4 @@
-# Tetongard v1.5
+# Tetongard v1.6
 
 The way to install Tetongard
 
