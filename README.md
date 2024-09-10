@@ -155,7 +155,9 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # HORSE
 
-- "Völund Fire" replaced "Recruitment", forged tools bonus value = +5% -> +10%
+- "Völund Fire" replaced "Sharp axes"
+
+- "Ancestral Influence" raplaced "Recruitment", forging time less 50% -> 35% 
 
 - "Völund Forge" cost upgrade = 100 wood -> 50 wood 
 
@@ -163,6 +165,8 @@ Rat's and Dragon's starting pop was reworked also
 # KRAKEN
 
 - starting ghost was removed
+
+- On non-coastal zones, colonization and building costs are 50% more expensive -> 20%
 
 - Seeresses production = 3 wyrd -> 3.1 wyrd
 
