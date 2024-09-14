@@ -131,6 +131,8 @@ Rat's and Dragon's starting pop was reworked also
 
 - 200 fame bonus switched with 500 fame bonus
 
+- "The bear awakens" = +1.5% attack bonus for every 100 fame -> +5% for every 200 fame
+
 - 500 fame bonus = +15% production -> +25%
 
 ----------------------------------------------------------------
