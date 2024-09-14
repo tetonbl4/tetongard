@@ -5296,12 +5296,12 @@
 							"id": 8
 						},
 						{
-							"val": 0.015,
+							"val": 0.05,
 							"comments": "Power bonus",
 							"id": 7
 						},
 						{
-							"val": 100,
+							"val": 200,
 							"comments": "Fame",
 							"id": 9
 						}
@@ -6013,7 +6013,7 @@
 					"desc": "[Comfort] is increased by +::value:: in all of your zones.",
 					"values": [
 						{
-							"val": 1,
+							"val": 2,
 							"id": 0
 						}
 					],
