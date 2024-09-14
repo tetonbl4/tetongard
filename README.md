@@ -88,6 +88,8 @@ Rat's and Dragon's starting pop was reworked also
 
 - Church building cost = 50 gold -> 25 gold
 
+- Vow of Obedience = +1 liveability -> +2 liveability 
+
 ----------------------------------------------------------------
 # STANDART LORE BUFFS
 
