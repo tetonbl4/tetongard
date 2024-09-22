@@ -233,10 +233,12 @@ Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch)
 
 - converting military experience into a resource was reduced (around 30%)
 
+- base brawler cost = 30 gold -> 50 gold
+
+- brawler step cost = 15 gold -> 5 gold 
 
 *an attempt to give much importance to the economy of the hound and as well as changing the 
-focus of the gameplay from forcing the number of berserkers instead of the number of brawlers 
-and their subsequent return to the economy
+focus of the gameplay from forcing the number of berserkers instead of the number of brawlers
 
 - "Living Legends" = feast cost reduction 10% -> 17.5%
 
