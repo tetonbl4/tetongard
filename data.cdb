@@ -72197,11 +72197,11 @@
 							"desc": "Two civilian units enter the [BrawlerCamp]. Only one emerges and becomes a [PackBrawler]—a powerful unit worthy of becoming a berserker.",
 							"values": [
 								{
-									"val": 30,
+									"val": 50,
 									"id": "CPackBrawlerRecruitBaseCost"
 								},
 								{
-									"val": 15,
+									"val": 5,
 									"id": "CPackBrawlerRecruitCostIncrease",
 									"comments": "Increapse per already owned military unit"
 								}
