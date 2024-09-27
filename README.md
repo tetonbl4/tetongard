@@ -74,6 +74,16 @@ Rat's and Dragon's starting pop was reworked also
 - 1500 exp bonus = +100% -> +50%
 
 ----------------------------------------------------------------
+# TRADE WIN REWORK:
+
+- prestige steps have been changed 500 \ 1000 \ 1500 -> 250 \ 500 \ 1000
+
+- The first resources received from a boat have been increased = +100 food and wood -> +200
+
+*since the resource bonus for the prestige level has not been changed, for level 2 and 3
+you will get 250 and 300 resources
+
+----------------------------------------------------------------
 # KINGDOMS REWORK
 
 - Sentry camp costs no more gold (only 50 wood)
