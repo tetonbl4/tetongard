@@ -655,9 +655,9 @@
 					"id": "StepsPrestige",
 					"oldValue": 0,
 					"value": [
+						250,
 						500,
 						1000,
-						1500,
 						2000
 					],
 					"comments": "Qty of fame commercial influence required to receive stuff, max length : 4",
@@ -710,7 +710,7 @@
 						"isInt": true
 					},
 					"oldValue": 0,
-					"value": 100
+					"value": 200
 				},
 				{
 					"id": "PrestigeStartWood",
@@ -718,7 +718,7 @@
 						"isInt": true
 					},
 					"oldValue": 0,
-					"value": 150
+					"value": 200
 				},
 				{
 					"id": "PrestigeStartLore",
