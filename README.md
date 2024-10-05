@@ -1,4 +1,4 @@
-# Tetongard v1.6
+# Tetongard v1.7 (Bifrost patch)
 
 The way to install Tetongard
 
