@@ -1,8 +1,14 @@
 # Tetongard v1.7 (Bifrost patch)
 
-The way to install Tetongard
+The easy way to install Tetongard // Простой способ установки
 
-# installing the bms script and patching
+Download [res.rar](https://drive.google.com/drive/folders/17eDc8txIsbUFHFYrdLoKOwfT6CzQ-vyj?usp=sharing)
+
+unzip and replace the file of the same name in the game folder // Разархивировать res.pak в папку с игрой с заменой файла (оригинальный файл можно заранее скопировать при этом куда вам угодно)
+
+HOW TO RETURN NORTHGARD TO ORIGINAL? - to check local files through a gear in a steam, it will rewrite the files to their original form in less than 1 min
+
+# Classic way - installing the bms script and patching (there are problems with windows 11)
 
 Download data.cbd // Скачать файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
 
