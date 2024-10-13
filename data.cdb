@@ -469,7 +469,7 @@
 					"id": "BuildingBurnTime",
 					"props": {},
 					"oldValue": 0,
-					"value": 60
+					"value": 180
 				},
 				{
 					"id": "MarketBaseResourcesAmount",
@@ -681,7 +681,6 @@
 					"value": [
 						250,
 						500,
-						1000,
 						2000
 					],
 					"comments": "Qty of fame commercial influence required to receive stuff, max length : 4",
@@ -11223,7 +11222,7 @@
 						{
 							"id": 6,
 							"props": {},
-							"val": 0.2
+							"val": 0
 						},
 						{
 							"props": {
@@ -11236,7 +11235,7 @@
 							"comments": "trigger attack",
 							"id": 7,
 							"props": {},
-							"val": 0.5
+							"val": 0
 						}
 					],
 					"name": "Magma Strike",
@@ -19987,8 +19986,8 @@
 					"proba": 0,
 					"props": {
 						"type": 0,
-						"startMonth": 4,
-						"repeatEvery": 3,
+						"startMonth": 7,
+						"repeatEvery": 6,
 						"dynVal": 2
 					},
 					"comments": "",
@@ -40406,7 +40405,7 @@
 						}
 					],
 					"props": {},
-					"flags": 1,
+					"flags": 1025,
 					"types": 262210,
 					"editor": {},
 					"gfx": {
@@ -51658,7 +51657,7 @@
 					"display": null
 				},
 				{
-					"typeStr": "10:IsStorage,CanFight,IsMilitaryCamp,IsOre,IsMine,IsFaction,NoSlot,ReqUpgradedTH,BuildOver,SpecialBonus,Unwalkable,UnitSlots,CanBeDestroyed,NoDestroy,InstantBuild,NotRealBuilding,ColliderOnly,NoWorldAttack,AffectedByTallGrass,IsOff,ReqMainMilitary,CanBeInvaded,Replaced,IsUpgrade,WalkThrough,NoArtifact,IsScoutBuilding,ReinforcementPortal,Tower,Barricade",
+					"typeStr": "10:IsStorage,CanFight,IsMilitaryCamp,IsOre,IsMine,IsFaction,NoSlot,ReqUpgradedTH,BuildOver,CannotBeScorched,Unwalkable,UnitSlots,CanBeDestroyed,NoDestroy,InstantBuild,NotRealBuilding,ColliderOnly,NoWorldAttack,AffectedByTallGrass,IsOff,ReqMainMilitary,CanBeInvaded,Replaced,IsUpgrade,WalkThrough,NoArtifact,IsScoutBuilding,ReinforcementPortal,Tower,Barricade",
 					"name": "flags",
 					"documentation": "UnitSlots : Enable multiple entrances so that units can work from different spots.\n\nNoSlot : This building won't take a construction slot to the zone it is built on."
 				},
@@ -64542,7 +64541,7 @@
 						"minimapIcon": "Lore",
 						"stoneExplosion": true
 					},
-					"flags": 2560,
+					"flags": 2048,
 					"skins": [],
 					"ingredients": [
 						{
@@ -65770,7 +65769,7 @@
 						"minimapIcon": "Tree",
 						"windMesh": "Grove01"
 					},
-					"flags": 512,
+					"flags": 0,
 					"skins": [],
 					"ingredients": [
 						{
@@ -67107,7 +67106,7 @@
 						"minimapIcon": "SpecialPlace",
 						"stoneExplosion": true
 					},
-					"flags": 512,
+					"flags": 0,
 					"values": [
 						{
 							"val": 1.3,
@@ -67190,7 +67189,7 @@
 						"minimapIcon": "SpecialPlace",
 						"stoneExplosion": true
 					},
-					"flags": 512,
+					"flags": 0,
 					"skins": [],
 					"ingredients": [],
 					"franceTexts": {},
@@ -67254,7 +67253,7 @@
 						"minimapIcon": "SpecialPlace",
 						"stoneExplosion": true
 					},
-					"flags": 512,
+					"flags": 0,
 					"skins": [],
 					"ingredients": [
 						{
@@ -67671,7 +67670,7 @@
 					"franceTexts": {},
 					"ingredients": [],
 					"props": {},
-					"flags": 33562688,
+					"flags": 33563200,
 					"assign": {
 						"flags": 8,
 						"acceptUnits": [
@@ -68080,7 +68079,7 @@
 							0
 						]
 					},
-					"flags": 167772160,
+					"flags": 167772672,
 					"assign": {
 						"flags": 0
 					},
@@ -68130,7 +68129,7 @@
 							0
 						]
 					},
-					"flags": 167772160,
+					"flags": 167772672,
 					"assign": {
 						"flags": 0
 					},
@@ -68180,7 +68179,7 @@
 							0
 						]
 					},
-					"flags": 167772160,
+					"flags": 167772672,
 					"assign": {
 						"flags": 0
 					},
@@ -68230,7 +68229,7 @@
 							0
 						]
 					},
-					"flags": 167772160,
+					"flags": 167772672,
 					"assign": {
 						"flags": 0
 					},
@@ -68280,7 +68279,7 @@
 							0
 						]
 					},
-					"flags": 167772160,
+					"flags": 167772672,
 					"assign": {
 						"flags": 0
 					},
@@ -69045,7 +69044,7 @@
 					"props": {
 						"maxNb": 1
 					},
-					"flags": 576,
+					"flags": 64,
 					"gen": {
 						"flags": 128,
 						"probaAppear": 20,
@@ -69609,7 +69608,7 @@
 						"atk": 0,
 						"creatorBased": true
 					},
-					"flags": 536891458,
+					"flags": 20546,
 					"gen": {
 						"flags": 0
 					},
@@ -70030,7 +70029,7 @@
 					"franceTexts": {},
 					"ingredients": [],
 					"props": {},
-					"flags": 16777280,
+					"flags": 16777792,
 					"assign": {
 						"flags": 0
 					},
@@ -72481,7 +72480,7 @@
 						"minimapIcon": "EpicPlace",
 						"dirtMode": 0
 					},
-					"flags": 33554432,
+					"flags": 33554944,
 					"padProps": {
 						"buildCategory": 0
 					},
@@ -72652,7 +72651,7 @@
 						"dirtMode": 0,
 						"minimapIcon": "EpicPlace"
 					},
-					"flags": 33556480,
+					"flags": 33556992,
 					"skins": [],
 					"ingredients": [
 						{
@@ -72718,7 +72717,7 @@
 						"dirtMode": 5,
 						"minimapIcon": "EpicPlace"
 					},
-					"flags": 33554432,
+					"flags": 33554944,
 					"skins": [],
 					"ingredients": [],
 					"values": [
@@ -72859,7 +72858,7 @@
 						"flags": 4,
 						"minimapIcon": "EpicPlace"
 					},
-					"flags": 33554432,
+					"flags": 33554944,
 					"skins": [],
 					"ingredients": [],
 					"franceTexts": {},
@@ -135839,7 +135838,8 @@
 								"res": "Silver",
 								"qty": 0
 							}
-						]
+						],
+						"needBifrost": true
 					},
 					"rarity": 0,
 					"mpId": "villagerBifrost",
@@ -135946,6 +135946,12 @@
 				{
 					"typeStr": "8",
 					"name": "price",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "2",
+					"name": "needBifrost",
 					"opt": true,
 					"kind": null
 				}
@@ -152974,6 +152980,14 @@
 					]
 				},
 				{
+					"id": "NiflheimSeaFreeze",
+					"files": [
+						{
+							"file": "sfx/ui/nilfheimseafreeze.wav"
+						}
+					]
+				},
+				{
 					"id": "KrakenAttackAnnounce",
 					"files": [
 						{
@@ -158809,7 +158823,7 @@
 						{
 							"values": {
 								"gullveig_stomp": {
-									"radius": 15,
+									"radius": 20,
 									"delay": 3,
 									"poisonDuration": 3,
 									"damage": 50
@@ -159204,10 +159218,10 @@
 													"count": 1
 												},
 												{
-													"count": 1
+													"count": 2
 												},
 												{
-													"count": 1
+													"count": 2
 												}
 											]
 										},
@@ -159499,7 +159513,7 @@
 									"radiusMax": 30,
 									"width": 4.25,
 									"delay": 4.5,
-									"interval": 1.25,
+									"interval": 1.75,
 									"poisonDuration": 5,
 									"damage": 60
 								},
