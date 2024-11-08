@@ -1,5 +1,7 @@
 # Tetongard v1.7 (Bifrost patch)
 
+What is it? This is a modified balanced version of the game, the main goal of which is to achieve a perfect balance between clans in a 3x3 game
+
 The easy way to install Tetongard
 
 Download [res.rar](https://drive.google.com/drive/folders/17eDc8txIsbUFHFYrdLoKOwfT6CzQ-vyj?usp=sharing)
