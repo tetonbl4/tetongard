@@ -1,28 +1,28 @@
 # Tetongard v1.7 (Bifrost patch)
 
-The easy way to install Tetongard // Простой способ установки
+The easy way to install Tetongard
 
 Download [res.rar](https://drive.google.com/drive/folders/17eDc8txIsbUFHFYrdLoKOwfT6CzQ-vyj?usp=sharing)
 
-unzip and replace the file of the same name in the game folder // Разархивировать res.pak в папку с игрой с заменой файла (оригинальный файл можно заранее скопировать при этом куда вам угодно)
+unzip and replace the file of the same name in the game folder
 
 HOW TO RETURN NORTHGARD TO ORIGINAL? - to check local files through a gear in a steam, it will rewrite the files to their original form in less than 1 min
 
 # Classic way - installing the bms script and patching (there are problems with windows 11)
 
-Download data.cbd // Скачать файл [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
+Download [data.cbd](https://drive.google.com/file/d/114uJwAv_4DhqzjJF3hj_sZKbqtlaOm7v/view?usp=sharing)
 
-Download // Скачать [QuickBMS](https://drive.google.com/drive/folders/1QZfT5OBuEWWo8MX5duatxdez9rh39yqN?usp=sharing)
+Download [QuickBMS](https://drive.google.com/drive/folders/1QZfT5OBuEWWo8MX5duatxdez9rh39yqN?usp=sharing)
 
 *personally, I would recommend that you move all the files to the game folder (create a modded folder there or something)
 
-Open reimport.bat // Запустить файл reimport.bat
+Open reimport.bat
 
-Choose northgard_res_pak.bms // В окне reimport.bat выбрать northgard_res_pak.bms
+Choose northgard_res_pak.bms
 
-Choose res.pak in game folder // Потом выбрать res.pak в папке с игрой (steam/steamapps/common/northgard)
+Choose res.pak in game folder
 
-Choose data.cbd // Потом выбрать скачанный файл data.cbd
+Choose data.cbd
 
 # Congratulation
 Your northgard is patched and you can host p2p lobbys with your rules
@@ -51,24 +51,25 @@ Rat's and Dragon's starting pop was reworked also
 ----------------------------------------------------------------
 # RELIC BALANCED:
 
-- MOJO = damage multiplied X1.5
+- MOJO = damage multiplied X1.33
 
-- Gefjun's Jar = decrease consumption 20% -> 10%
+- Gefjun's Jar = +1.5% production per 1 happiness -> +2.5% 
 
 - Goat relic = feast bonus 20% -> 30%
 
-- Bear Relic = attack and defense bonus +10% -> +15%
+- Bear Relic = attack and defense bonus +10% -> +20%
 
 - Snake Relic = dodge chance 10% -> 15%
 
 - Lynx Relic = Spike trap cooldown 12 months -> 6 months
+  The slowdown was also reduced from 20% to 10%.
 
 - Owl Relic = Lore cost to upgrade zone 50 lore -> 75 lore
 
 - Holy Fire relic = 100% -> Damage reduced by 40%
 
-- Boar Relic = +6 food -> +10 food
-  Lore cost to spawn Giant Boar = 150 lore -> 120 lore
+- Boar Relic = +6 food -> +8 food
+  Lore cost to spawn Giant Boar = 150 lore -> 100 lore
 
 ----------------------------------------------------------------
 # LEGIONS REWORK:
@@ -98,7 +99,7 @@ you will get 250 and 300 resources
 
 - Fort costs no more gold (only 50 wood)
 
-- Recruiting lord cost = 50 gold 
+- Recruiting lord cost = 25 gold -> 40 gold 
 
 - Lodge camp upgrade cost = 100 wood -> 50 wood
 
@@ -120,9 +121,9 @@ you will get 250 and 300 resources
 
 - "Field Rations" replaced "eradication" = -75% -> -60%
 
-- "Spoils of War" = +50 mil exp -> +250
+- "Spoils of War" = +50 mil exp -> +150
 
-- "Plunder" replaced "Medicine" = +30% -> +45%
+- "Plunder" replaced "Medicine" = +30% -> +40%
 
 ----------------------------------------------------------------
 # STAG
@@ -219,7 +220,7 @@ of the clan, it will simply remove situations in which arrows do not work in bat
 ----------------------------------------------------------------
 # LION
 
-- "Steelwork" = +5% -> +2.5%
+- "Steelwork" = +5% -> +4%
 
 - "Marchfield" trigger chance bonus = +5% -> +10%
 
@@ -279,8 +280,6 @@ focus of the gameplay from forcing the number of berserkers instead of the numbe
 
 - "Rapacious Exploitation" = value +1.5 -> +1
 
-- "ScorchedEarth" gives 50% less resources
-
 - "18 Age: Tears of the earth" = attack bonus +50% -> +25% 
 
 - Skirmisher camp upgrade cost = 100 wood -> 50 wood
@@ -299,7 +298,7 @@ focus of the gameplay from forcing the number of berserkers instead of the numbe
 ----------------------------------------------------------------
 # EAGLE
 
-- nothing
+- nothing (fox dens was nerfed above)
 
 ----------------------------------------------------------------
 # SQUIRREL
@@ -327,7 +326,7 @@ duration upgrade meal 200 Mushrooms -> 100 Mushrooms
 
 - Monkh production in a lore stone = 2 lore -> 2.5 lore
 
-- Duchy workers consumption = 25% -> 40%
+- Duchy workers consumption = 25% -> 35%
 
 - "Mutual Effort" replaced "Negotiation"
 
