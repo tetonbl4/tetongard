@@ -1,4 +1,4 @@
-# Tetongard v1.7 (Bifrost patch)
+# Tetongard v1.8 (Bifrost patch)
 
 What is it? This is a modified balanced version of the game, the main goal of which is to achieve a perfect balance between clans in a 3x3 game
 
