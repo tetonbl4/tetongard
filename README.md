@@ -146,16 +146,11 @@ you will get 250 and 300 resources
 ----------------------------------------------------------------
 # BEAR
 
-- "Shield Mastery" replaced "Military Strategy" = +5% defense -> +10%
+- "Shield Mastery" replaced "Fur coats" = +5% defense -> +10%
+
+- "Protector of the land" replaced "Feeling safe"
 
 - "Harpoons" replaced "Eradication" = +30% -> +20%
-
-- 200 fame bonus switched with 500 fame bonus
-
-- "The bear awakens" = +1.5% attack bonus for every 100 fame -> +5% for every 200 fame
-  = +3 fame per killing a foe -> +2 fame 
-
-- 500 fame bonus = +15% production -> +25%
 
 ----------------------------------------------------------------
 # BOAR
@@ -200,7 +195,7 @@ you will get 250 and 300 resources
 
 - "Road To Valhalla" = valkyrie cost 120 gold -> 90 gold
 
-- Valkyrie gives only -1 wyrd
+- Valkyrie gives only -1 wyrd and healing faster (like a bear's Kaija)
 
 ----------------------------------------------------------------
 # OX
