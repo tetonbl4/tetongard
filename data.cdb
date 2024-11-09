@@ -7510,11 +7510,11 @@
 					"name": "Kindred Spirit",
 					"desc": "Having [BearMaiden] or a [Maiden] in a zone increases local production by ::percent::.",
 					"props": {
-						"fameTitle": 2
+						"fameTitle": 1
 					},
 					"values": [
 						{
-							"val": 1.25,
+							"val": 1.15,
 							"id": 0
 						},
 						{
@@ -7529,15 +7529,15 @@
 					"name": "The Bear Awakens",
 					"desc": "You gain +::value::[Fame] per enemy unit killed in a zone with the [Maiden]. Your military units gain +::percent_value_precise1:: power per ::value2::[Fame]. [BearMaiden] can now go in enemy territory.",
 					"props": {
-						"fameTitle": 1
+						"fameTitle": 2
 					},
 					"values": [
 						{
-							"val": 2,
+							"val": 3,
 							"id": 8
 						},
 						{
-							"val": 0.05,
+							"val": 0.04,
 							"comments": "Power bonus",
 							"id": 7
 						},
@@ -12682,7 +12682,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 0.175,
+							"val": 0.375,
 							"id": 0,
 							"props": {}
 						}
@@ -81593,11 +81593,11 @@
 						},
 						{
 							"newTech": "LandProtect",
-							"oldTech": "Coats"
+							"oldTech": "Security"
 						},
 						{
 							"newTech": "ShieldMaster",
-							"oldTech": "MilitaryStrategy"
+							"oldTech": "Coats"
 						},
 						{
 							"newTech": "Harpoons",
