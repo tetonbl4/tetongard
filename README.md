@@ -1,4 +1,4 @@
-# Tetongard v1.8 (Bifrost patch)
+# Tetongard v1.9 (Trade and Prestige patch)
 
 What is it? This is a modified balanced version of the game, the main goal of which is to achieve a perfect balance between clans in a 3x3 game
 
@@ -55,18 +55,16 @@ Rat's and Dragon's starting pop was reworked also
 
 - MOJO = damage multiplied X1.33
 
-- Gefjun's Jar = +1.5% production per 1 happiness -> +2.5% 
+- Gefjun's Jar = +1.5% production per 1 happiness -> +2.5% (20% max boost)
 
-- Goat relic = feast bonus 20% -> 30%
+- Goat relic = feast bonus for yourself 20% -> 30%
 
 - Bear Relic = attack and defense bonus +10% -> +20%
 
 - Snake Relic = dodge chance 10% -> 15%
 
-- Lynx Relic = Spike trap cooldown 12 months -> 6 months
+- Lynx Relic = Spike trap cooldown 12 months -> 8 months
   The slowdown was also reduced from 20% to 10%.
-
-- Owl Relic = Lore cost to upgrade zone 50 lore -> 75 lore
 
 - Holy Fire relic = 100% -> Damage reduced by 40%
 
@@ -83,16 +81,6 @@ Rat's and Dragon's starting pop was reworked also
 - 1500 exp bonus = +100% -> +50%
 
 ----------------------------------------------------------------
-# TRADE WIN REWORK:
-
-- prestige steps have been changed 500 \ 1000 \ 1500 -> 250 \ 500 \ 1000
-
-- The first resources received from a boat have been increased = +100 food and wood -> +200
-
-*since the resource bonus for the prestige level has not been changed, for level 2 and 3
-you will get 250 and 300 resources
-
-----------------------------------------------------------------
 # KINGDOMS REWORK
 
 - Sentry camp costs no more gold (only 50 wood)
@@ -105,7 +93,8 @@ you will get 250 and 300 resources
 
 - Lodge camp upgrade cost = 100 wood -> 50 wood
 
-- Church building cost = 50 gold -> 25 gold
+- Church building cost = 100 wood -> 60 wood
+ 			  50 gold -> 25 gold
 
 - Vow of Obedience = +1 liveability -> +2 liveability 
 
@@ -114,9 +103,9 @@ you will get 250 and 300 resources
 
 - "Shinyhappypeople" = -20% -> -25%
 
-- "Hearthstone" = 0.5 wood consumption bonus -> 0.7
+- "Hearthstone" = -50% wood consumption -> -70%
 
-- "Trading Caravan" = 1.2 value -> 1.4
+- "Trading Caravan" = +20% value -> +40%
 
 ----------------------------------------------------------------
 # WOLF
@@ -130,11 +119,9 @@ you will get 250 and 300 resources
 ----------------------------------------------------------------
 # STAG
 
-- "Young and Proud" = +2% -> +3%
+- "Young and Proud" = +2% attack power per tile -> +3%
 
 - "The Value of Great Deeds" = +1.5 gold -> +1 gold
-
-- "Glory of the Clan" = +30% fame -> +15% fame
 
 ----------------------------------------------------------------
 # GOAT
@@ -150,13 +137,10 @@ you will get 250 and 300 resources
 
 - "Protector of the land" replaced "Feeling safe"
 
-- "Harpoons" replaced "Eradication" = +30% -> +20%
+- "Harpoons" replaced "Eradication" = +30% -> +15%
 
 ----------------------------------------------------------------
 # BOAR
-
-- "Herbalism" = healing boost +20% -> 40%
-	lore boost production +10% -> +15%
 
 - "Osmosis" replaced "Colonization"
 
@@ -189,10 +173,6 @@ you will get 250 and 300 resources
 
 - On non-coastal zones, colonization and building costs are 50% more expensive -> 20%
 
-- Seeresses production = 3 wyrd -> 3.1 wyrd
-
-*an attempt to remove the situation with 4.9 wyrd with the loss of the fish production boost 
-
 - "Road To Valhalla" = valkyrie cost 120 gold -> 90 gold
 
 - Valkyrie gives only -1 wyrd and healing faster (like a bear's Kaija)
@@ -209,17 +189,12 @@ you will get 250 and 300 resources
 ----------------------------------------------------------------
 # LYNX
 
-- "Fire arrows" = proc chance 30% -> 50%
-
-*fire arrows do not stack their effect with each other, so this will have almost no effect on the combat component
-of the clan, it will simply remove situations in which arrows do not work in battles at small limits
+- nothing
 
 ----------------------------------------------------------------
 # LION
 
-- "Steelwork" = +5% -> +4%
-
-- "Marchfield" trigger chance bonus = +5% -> +10%
+- "Marchfield" trigger chance bonus = +25% -> +75% (from 15% to 26%)
 
 - Faith generation from killing a foe = +60% (0.33 conversion from military exp -> 0.5)
 
@@ -232,12 +207,6 @@ of the clan, it will simply remove situations in which arrows do not work in bat
 ----------------------------------------------------------------
 # OWL
 
-- "Protection Rune Carving" = +0.25 (0.35) -> +0.15 (0.25)
-
-- "Creeping Vines" = +0.15 (0.35) -> = +0.15 (0.25)
-
-- "Parasitic Vegetables" = 0.33 -> 0.25 consumption, gain ratio = 4 -> 3
-
 - Owl warchiefs Verdandi and Uld was rebalanced
 Verdandi = +5% boost production (+5% per branch) -> +10% (+2.5% per branch)
 Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch) 
@@ -245,30 +214,24 @@ Uld = +1 lore (+1 per branch) -> +2 lore (+0.5 per branch)
 ----------------------------------------------------------------
 # HOUND
 
-- converting military experience into a resource was reduced (around 30%)
+- base brawler cost = 30 gold -> 40 gold
 
-- base brawler cost = 30 gold -> 50 gold
-
-- brawler step cost = 15 gold -> 5 gold 
+- brawler step cost = 15 gold -> 10 gold 
 
 *an attempt to give much importance to the economy of the hound and as well as changing the 
 focus of the gameplay from forcing the number of berserkers instead of the number of brawlers
 
 - "Living Legends" = feast cost reduction 10% -> 17.5%
 
-- "Heavy Workforce" = +50% -> +70%
+- "Heavy Workforce" = +50% -> +75%
 
-- 200 fame bonus = souls of dead berserkers grants 50% exp -> 80%
+- 200 fame bonus = souls of dead berserkers grants 50% exp -> 75%
 ----------------------------------------------------------------
 # RAVEN
-
-- "Gear Upgrade" replaced "Military strategy" = +4% (20%) -> +2% (15%)
 
 - Chief hire no more cost iron, but 200 gold
 
 - 200 fame bonus = -> homeland trades 20% stronger
-
-- 500 fame bonus = -15% upkeep -> -30% upkeep
 
 - Mercenaries base cost = 90 gold -> 70 gold
 
@@ -280,6 +243,7 @@ focus of the gameplay from forcing the number of berserkers instead of the numbe
 - "18 Age: Tears of the earth" = attack bonus +50% -> +25% 
 
 - Skirmisher camp upgrade cost = 100 wood -> 50 wood
+ 				  50 gold -> 25 gold
 
 ----------------------------------------------------------------
 # RAT
@@ -299,12 +263,6 @@ focus of the gameplay from forcing the number of berserkers instead of the numbe
 
 ----------------------------------------------------------------
 # SQUIRREL
-
-- Happines Stove production = 3 -> 3.5 
-
-- 200 fame bonus = -> meal for allies -50% -> -25%
-
-- "Cooking Mastery" = -20% meal food cost -> -40%
 
 Meals changes:
 
@@ -330,6 +288,5 @@ duration upgrade meal 200 Mushrooms -> 100 Mushrooms
 ----------------------------------------------------------------
 # BUGFIXES
 
-- Hound's berserkers now gives 25 gold to the Wolf Clan with lore "spoils of war" instead of 5 gold
 - tamed boar move speed fixed
-- 
+
