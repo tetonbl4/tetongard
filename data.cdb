@@ -679,9 +679,9 @@
 					"id": "StepsPrestige",
 					"oldValue": 0,
 					"value": [
-						250,
 						500,
 						1000,
+						1500,
 						2000
 					],
 					"comments": "Qty of fame commercial influence required to receive stuff, max length : 4",
@@ -734,7 +734,7 @@
 						"isInt": true
 					},
 					"oldValue": 0,
-					"value": 200
+					"value": 100
 				},
 				{
 					"id": "PrestigeStartWood",
@@ -742,7 +742,7 @@
 						"isInt": true
 					},
 					"oldValue": 0,
-					"value": 200
+					"value": 150
 				},
 				{
 					"id": "PrestigeStartLore",
@@ -828,6 +828,60 @@
 					"props": {},
 					"oldValue": 0,
 					"value": 0.1
+				},
+				{
+					"id": "OutsidersStepsPercents",
+					"props": {},
+					"oldValue": 0,
+					"value": [
+						0.05,
+						0.15,
+						0.25,
+						0.5
+					],
+					"comments": "To reach step 1, 2, 3 or 4, you need to reach 5%, 15, 25% or 40% of the total outsiders share."
+				},
+				{
+					"id": "OutsidersFood",
+					"props": {},
+					"oldValue": 0,
+					"value": 100,
+					"comments": "Resources you gain at step 2"
+				},
+				{
+					"id": "OutsidersWood",
+					"props": {},
+					"oldValue": 0,
+					"value": 100,
+					"comments": "Resources you gain at step 2"
+				},
+				{
+					"id": "OutsidersLore",
+					"props": {},
+					"oldValue": 0,
+					"value": 50,
+					"comments": "Resources you gain at step 2"
+				},
+				{
+					"id": "OutsidersFame",
+					"props": {},
+					"oldValue": 0,
+					"value": 15,
+					"comments": "Resources you gain at step 2"
+				},
+				{
+					"id": "OutsidersStone",
+					"props": {},
+					"oldValue": 0,
+					"value": 5,
+					"comments": "Resources you gain at step 3"
+				},
+				{
+					"id": "OutsidersIron",
+					"props": {},
+					"oldValue": 0,
+					"value": 5,
+					"comments": "Resources you gain at step 3"
 				},
 				{
 					"id": "FameLevels",
@@ -2170,7 +2224,7 @@
 						"y": 1
 					},
 					"props": {
-						"unlockTrading": 3
+						"unlockTrading": 7
 					},
 					"values": [
 						{
@@ -2231,7 +2285,9 @@
 							"id": 0
 						}
 					],
-					"props": {},
+					"props": {
+						"unlockGreatRoute": true
+					},					
 					"kind": 2,
 					"gfx": {
 						"file": "ui/techTree/loreIcons.png",
@@ -2246,7 +2302,7 @@
 					"desc": "Your next [KrownPicker] evolution is free.",
 					"values": [],
 					"props": {
-						"unlockTrading": 3
+						"unlockTrading": 7
 					},
 					"kind": 2,
 					"gfx": {
@@ -2775,7 +2831,8 @@
 							}
 						],
 						"bifrostClanSelectionWeight": 25,
-						"bifrostSelectionWeight": 15
+						"bifrostSelectionWeight": 15,
+						"unlockTrading": 4
 					},
 					"gfx": {
 						"file": "ui/techTree/loreIcons.png",
@@ -2987,7 +3044,7 @@
 				{
 					"id": "GloryClan",
 					"name": "Glory of the Clan",
-					"desc": "Increases current [Fame] and all future gains by ::percent::.\n\nGains from Trade Routes and Great Trade Routes are increased by ::percent1:: for every ::value2:: [Fame] gained.",
+"desc": "Increases current [Fame] and all future gains by ::percent::.\n\nFor every ::value2:: [Fame] gained, gains from trade routes are increased by ::percent1:: and favors from [OutsidersFaction] arrive ::percent1:: faster. (Max: ::inv_percent3::)",
 					"kind": 2,
 					"gfx": {
 						"file": "ui/techTree/loreIcons.png",
@@ -3008,11 +3065,16 @@
 						{
 							"val": 1.1,
 							"id": 3,
-							"comments": "Trade Increase"
+							"comments": "Increase Fame gain by 10%. Reduce Outsiders rewards cooldown by 10%"
 						},
 						{
 							"val": 200,
 							"id": 8
+						},
+						{
+							"val": 0.5,
+							"id": 12,
+							"comments": "The cooldown reduction cannot exceed 50%"
 						}
 					]
 				},
@@ -3460,12 +3522,12 @@
 					"kind": 1,
 					"values": [
 						{
-							"val": 0.02,
+							"val": 0.04,
 							"id": 0,
 							"comments": "% atk & def bonus per active sailor/merchant"
 						},
 						{
-							"val": 0.15,
+							"val": 0.2,
 							"id": 3,
 							"comments": "% weapon improvement reduction"
 						}
@@ -3507,7 +3569,7 @@
 				{
 					"id": "Wealth",
 					"name": "Exotic Goods",
-					"desc": "Increases [Sailor]s' resource production by ::percent3::.\nGreat Trade Routes give +::value4:: [Happy].\n\nFor each ::value::[Prestige], new [Villager]s arrive ::percent_value1:: faster. (Max: ::percent_value2::)",
+					"desc": "Increases [Sailor]s' resource production by ::percent::.\nTrade-routes with [OutsidersFaction] give +::value1:: [Happy].",
 					"kind": 2,
 					"props": {
 						"unlockGreatRoute": true,
@@ -3568,23 +3630,11 @@
 					},
 					"values": [
 						{
-							"val": 200,
+							"val": 1.2,
 							"id": 0
 						},
 						{
-							"val": 0.15,
-							"id": 3
-						},
-						{
-							"val": 0.75,
-							"id": 12
-						},
-						{
-							"val": 1.2,
-							"id": 13
-						},
-						{
-							"val": 2,
+							"val": 1,
 							"id": 1
 						}
 					]
@@ -3610,7 +3660,7 @@
 						}
 					],
 					"props": {
-						"unlockTrading": 3,
+						"unlockTrading": 7,
 						"bifrostPrerequisites": [
 							{
 								"invert": false,
@@ -3835,7 +3885,7 @@
 					"kind": 0,
 					"values": [
 						{
-							"val": 1.2,
+							"val": 1.15,
 							"id": 0,
 							"type": 0,
 							"canBeBoosted": true,
@@ -3849,11 +3899,41 @@
 					]
 				},
 				{
+					"id": "WinterFestival",
+					"name": "Winter Festival",
+					"desc": "During winter, [Food] consumption is reduced by 30% and all non-[Food] productions are increased by +::percent1::.",
+					"props": {
+						"stealableByVikings": true,
+						"stealableByCarolingians": true,
+						"bifrostSelectionWeight": 10,
+						"bifrostClanSelectionWeight": 30
+					},
+					"gfx": {
+						"file": "ui/techTree/loreIcons.png",
+						"size": 48,
+						"x": 3,
+						"y": 5
+					},
+					"values": [
+						{
+							"val": 0.3,
+							"comments": "Food loss reduced",
+							"id": 0
+						},
+						{
+							"val": 1.15,
+							"id": 3,
+							"comments": "Production bonus (Not food)"
+						}
+					],
+					"kind": 2
+				},
+				{
 					"id": "Bartering",
 					"name": "Bartering",
 					"desc": "Neutral factions will accept any resources and you gain +::value::[Happy] when trading with them.\nTrade routes with neutral factions earn you +::percent1:: more [Money] and a better relationship.",
 					"props": {
-						"unlockTrading": 2,
+						"unlockTrading": 6,
 						"bifrostPrerequisites": [
 							{
 								"invert": false,
@@ -3990,7 +4070,7 @@
 					},
 					"values": [
 						{
-							"val": 1.05,
+							"val": 1.075,
 							"id": 0,
 							"comments": "Production in hut's zone per Mender"
 						},
@@ -4000,7 +4080,7 @@
 							"comments": "Healing speed increase"
 						},
 						{
-							"val": 1.15,
+							"val": 1.1,
 							"id": 12,
 							"comments": "Production in hut's zone per Mender for Lore"
 						}
@@ -4129,7 +4209,7 @@
 					"name": "Black Market",
 					"desc": "[Merchant]s produce +::percent:: more [Money].\nYou can trade even when at war.\nWhen units are using [CanHide] on Neutral Faction zones, you steal the amount received by the neutral faction.",
 					"props": {
-						"unlockTrading": 3,
+						"unlockTrading": 7,
 						"bifrostPrerequisites": [
 							{
 								"invert": false,
@@ -4972,7 +5052,7 @@
 						}
 					],
 					"props": {
-						"unlockTrading": 3,
+						"unlockTrading": 7,
 						"stealableByVikings": true,
 						"stealableByCarolingians": true,
 						"bifrostPrerequisites": [
@@ -5550,7 +5630,7 @@
 						}
 					],
 					"props": {
-						"unlockTrading": 3,
+						"unlockTrading": 7,
 						"bifrostPrerequisites": [
 							{
 								"invert": false,
@@ -5685,7 +5765,7 @@
 					"desc": "[Meal] have improved effects.\n[Meal] [Food] cost is reduced by ::percent::.",
 					"values": [
 						{
-							"val": 1.4,
+							"val": 1.2,
 							"id": 0,
 							"comments": "bonus food cost"
 						},
@@ -6264,7 +6344,7 @@
 					"desc": "Each military building in a zone with a [Smithy] provides a +::percent_value:: defense bonus to the associated units.",
 					"values": [
 						{
-							"val": 0.04,
+							"val": 0.05,
 							"id": 0,
 							"comments": "defense bonus"
 						}
@@ -6351,7 +6431,7 @@
 							"comments": "cd reduc on military upgrades"
 						},
 						{
-							"val": 1,
+							"val": 0.75,
 							"id": 3,
 							"comments": "trigger chance bonus"
 						}
@@ -6675,11 +6755,11 @@
 					"desc": "Each [Lore] production building and [Grove] in the zone provides its owner's military units +::value:: Defence.\n::current::",
 					"values": [
 						{
-							"val": 0.15,
+							"val": 0.25,
 							"id": 0,
 							"comments": "",
 							"canBeBoosted": true,
-							"maxBoost": 0.25
+							"maxBoost": 0.35
 						},
 						{
 							"val": 6,
@@ -6870,7 +6950,8 @@
 								]
 							}
 						],
-						"bifrostClanSelectionWeight": 20
+						"bifrostClanSelectionWeight": 20,
+						"unlockTrading": 4
 					},
 					"gfx": {
 						"file": "ui/techTree/loreIcons.png",
@@ -6949,7 +7030,7 @@
 							"val": 0.15,
 							"id": 0,
 							"canBeBoosted": true,
-							"maxBoost": 0.25
+							"maxBoost": 0.35
 						}
 					],
 					"props": {
@@ -6991,7 +7072,7 @@
 					"desc": "::owl:: periodically reveals the resources of the faction owning the zone and gains resources for every ::value_precise1:: in their stock.\n\nWorking units in the zone consume -::percent_value:: fewer resources.",
 					"values": [
 						{
-							"val": 0.25,
+							"val": 0.33,
 							"id": 0,
 							"comments": "Reduced consumption",
 							"canBeBoosted": true,
@@ -7003,16 +7084,31 @@
 							"comments": "Every X of a resource, you gain (Value3 / resource.tracePrice) per Norn"
 						},
 						{
-							"val": 3,
+							"val": 4,
 							"id": 12,
 							"comments": "Gain ratio"
 						},
 						{
-							"val": 1,
+							"val": 3,
 							"id": 13,
 							"comments": "Time in months to spy",
 							"canBeBoosted": true,
-							"maxBoost": 0.5
+							"maxBoost": 2
+						},
+						{
+							"val": 80,
+							"id": 15,
+							"comments": "Max food gained by the tech"
+						},
+						{
+							"val": 50,
+							"id": 18,
+							"comments": "Max wood gained by the tech"
+						},
+						{
+							"val": 50,
+							"id": 19,
+							"comments": "Max krowns gained by the tech"
 						}
 					],
 					"props": {
@@ -7195,7 +7291,7 @@
 					"desc": "[PackBrawler]s can be assigned to production buildings. They produce +::percent_value:: more than civilans and benefit from forged tools.",
 					"values": [
 						{
-							"val": 0.7,
+							"val": 0.75,
 							"id": 0
 						}
 					],
@@ -7496,7 +7592,7 @@
 					},
 					"values": [
 						{
-							"val": 0.5,
+							"val": 0.85,
 							"id": 0
 						},
 						{
@@ -7518,7 +7614,7 @@
 							"id": 0
 						},
 						{
-							"val": 0.01,
+							"val": 0.005,
 							"id": 3,
 							"comments": "Relation gain when in ally territory"
 						}
@@ -7828,7 +7924,7 @@
 				{
 					"id": "Strategist",
 					"name": "A Helping Hand",
-					"desc": "You receive [Ingredients] of each type by boat and you increase your ingredient storage by ::value::.\nYou can make Meals for your allies (effects are ::percent2:: less effective for allies).\nYou unlock Gift routes at the [TradingPost].",
+					"desc": "You receive [Ingredients] of each type by boat and you increase your ingredient storage by ::value::.\nYou can make Meals for your allies (effects start as ::percent2:: less effective for allies but become more efficient as your relationships improve).\nYou unlock Gift routes at the [TradingPost].",
 					"values": [
 						{
 							"val": 200,
@@ -7841,7 +7937,7 @@
 							"comments": "discord factor"
 						},
 						{
-							"val": 0.75,
+							"val": 0.5,
 							"id": 12,
 							"comments": "Meal ratio gain for allies"
 						}
@@ -8027,12 +8123,17 @@
 				{
 					"id": "PillarsOfWisdom",
 					"name": "Eyes of the Forest",
-					"desc": "Once your [TownHall] is upgraded, [OwlNorn]s can explore enemy territories. You can place [OwlBranch]s in enemy territory.\n\nWhen a clan has favorable relations with you, Shared Knowledge grants you ::value:: times more [Lore].",
+					"desc": "[OwlNorn]s scout +::percent1:: faster and once your [TownHall] is upgraded, they can explore enemy territories. You can place [OwlBranch]s in enemy territory.",
 					"values": [
 						{
 							"val": 2,
 							"id": 0,
 							"comments": "Mutual Relation effect factor"
+						},
+						{
+							"val": 2,
+							"id": 3,
+							"comments": ""
 						}
 					],
 					"props": {
@@ -8042,7 +8143,7 @@
 				{
 					"id": "KnowledgeAsAWeapon",
 					"name": "Pillars of Wisdom",
-					"desc": "Zones can contain an additional [OwlBranch]. Owl knowledges can be placed twice.\n\nBetter relations with a clan make Owl knowledges in their territory stronger.",
+					"desc": "Zones can contain an additional [OwlBranch]. Owl knowledges can be placed twice.",
 					"values": [
 						{
 							"val": 1.5,
@@ -8064,7 +8165,7 @@
 							"comments": "XP Boost"
 						},
 						{
-							"val": 0.8,
+							"val": 0.75,
 							"id": 3,
 							"comments": "XP Transferred"
 						}
@@ -8159,31 +8260,6 @@
 						"y": 0
 					},
 					"kind": 3
-				},
-				{
-					"id": "WinterFestival",
-					"name": "Winter Festival",
-					"desc": "During winter, [Food] consumption is reduced by 30% and all non-[Food] productions are increased by +::percent1::.",
-					"props": {},
-					"gfx": {
-						"file": "ui/techTree/winterFestival.png",
-						"size": 58,
-						"x": 0,
-						"y": 0
-					},
-					"kind": 3,
-					"values": [
-						{
-							"val": 0.3,
-							"comments": "Food loss reduced",
-							"id": 0
-						},
-						{
-							"val": 1.15,
-							"id": 3,
-							"comments": "Production bonus (Not food)"
-						}
-					]
 				},
 				{
 					"id": "LokiBlessing",
@@ -8853,6 +8929,118 @@
 						]
 					},
 					"id": "Carolingians"
+				},
+				{
+					"id": "Owl",
+					"t0": {
+						"growth": [
+							{
+								"tech": "FertileSoils"
+							}
+						],
+						"might": [
+							{
+								"tech": "CarnivorousFlower"
+							}
+						],
+						"wealth": [
+							{
+								"tech": "MineralRoots"
+							}
+						]
+					},
+					"t1": {
+						"growth": [
+							{
+								"tech": "Colonize"
+							},
+							{
+								"tech": "BetterSilo"
+							}
+						],
+						"might": [
+							{
+								"tech": "Coats"
+							},
+							{
+								"tech": "RunicRoots"
+							}
+						],
+						"wealth": [
+							{
+								"tech": "Drakkars"
+							},
+							{
+								"tech": "ParasiticSpores"
+							}
+						]
+					},
+					"t2": {
+						"growth": [
+							{
+								"tech": "Recruit"
+							},
+							{
+								"tech": "TerraformingGround"
+							}
+						],
+						"might": [
+							{
+								"tech": "CreepingVines"
+							},
+							{
+								"tech": "Security"
+							}
+						],
+						"wealth": [
+							{
+								"tech": "Knowledge"
+							},
+							{
+								"tech": "Upgrades"
+							}
+						]
+					},
+					"t3": {
+						"growth": [
+							{
+								"tech": "InvasiveVegetables"
+							},
+							{
+								"tech": "SlotGrowth"
+							}
+						],
+						"might": [
+							{
+								"tech": "Heroes"
+							},
+							{
+								"tech": "MonsterSlayer"
+							}
+						],
+						"wealth": [
+							{
+								"tech": "ParasiticFruits"
+							},
+							{
+								"tech": "SlotWealth"
+							}
+						]
+					},
+					"victory": [
+						{
+							"tech": "OwlGrowthBlessing"
+						},
+						{
+							"tech": "OwlMightBlessing"
+						},
+						{
+							"tech": "OwlWealthBlessing"
+						},
+						{
+							"tech": "OwlFinalBlessing"
+						}
+					]
 				}
 			],
 			"separators": [],
@@ -9200,10 +9388,9 @@
 					"display": null
 				},
 				{
-					"typeStr": "10:Players,Neutrals",
+					"typeStr": "10:Players,Neutrals,Outsiders",
 					"name": "unlockTrading",
-					"opt": true,
-					"display": null
+					"opt": true
 				},
 				{
 					"typeStr": "8",
@@ -9333,7 +9520,7 @@
 					"name": "val"
 				},
 				{
-					"typeStr": "5:Value,Happy,Happy2,Value2,Duration,UpgradeCost,Cooldown,AttackBonus,Fame,Range,ConstantProd,ConstantProd2,Value3,Value4,AttackBonus2,Value5,Fame2,Prod",
+					"typeStr": "5:Value,Happy,Happy2,Value2,Duration,UpgradeCost,Cooldown,AttackBonus,Fame,Range,ConstantProd,ConstantProd2,Value3,Value4,AttackBonus2,Value5,Fame2,Prod,Value6,Value7",
 					"name": "id"
 				},
 				{
@@ -9736,7 +9923,7 @@
 							"comments": "Taunt duration"
 						},
 						{
-							"val": 3,
+							"val": 6,
 							"id": 8,
 							"props": {
 								"dataType": 1
@@ -10073,7 +10260,7 @@
 							"comments": "Number of waves summoned"
 						},
 						{
-							"val": 5,
+							"val": 8,
 							"id": 8,
 							"props": {
 								"dataType": 1
@@ -13539,13 +13726,13 @@
 							"props": {}
 						},
 						{
-							"val": 0.3,
+							"val": 0.15,
 							"id": 0,
 							"props": {},
 							"comments": "Damage Factor"
 						},
 						{
-							"val": 0.1,
+							"val": 0.2,
 							"id": 1,
 							"props": {},
 							"comments": "Chance to proc"
@@ -13608,13 +13795,13 @@
 							"comments": "Distance AOE"
 						},
 						{
-							"val": 0.3,
+							"val": 0.15,
 							"id": 0,
 							"props": {},
 							"comments": "Damage Factor"
 						},
 						{
-							"val": 0.1,
+							"val": 0.2,
 							"id": 1,
 							"props": {},
 							"comments": "Chance to proc"
@@ -13678,13 +13865,13 @@
 							}
 						},
 						{
-							"val": 0.1,
+							"val": 0.2,
 							"id": 0,
 							"props": {},
 							"comments": "Chance to Proc"
 						},
 						{
-							"val": 1.2,
+							"val": 1.1,
 							"id": 1,
 							"props": {},
 							"comments": "def"
@@ -13826,7 +14013,7 @@
 							}
 						},
 						{
-							"val": 0.1,
+							"val": 0.2,
 							"id": 0,
 							"props": {},
 							"comments": "Proc chance"
@@ -14473,7 +14660,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 0.25,
+							"val": 0.2,
 							"id": 0,
 							"props": {},
 							"comments": "Attack power reduction"
@@ -14511,7 +14698,7 @@
 					"texts": [],
 					"values": [
 						{
-							"val": 2,
+							"val": 1.5,
 							"id": 0,
 							"props": {
 								"dataType": 2
@@ -14647,7 +14834,7 @@
 							"comments": "ApexWarrior: Added slow per stack"
 						},
 						{
-							"val": 0.15,
+							"val": 0.1,
 							"id": 12,
 							"props": {},
 							"comments": "Max slow"
@@ -14691,7 +14878,7 @@
 							"comments": "Slow"
 						},
 						{
-							"val": 0.15,
+							"val": 0.1,
 							"id": 12,
 							"props": {},
 							"comments": "Damage taken boost"
@@ -16333,7 +16520,7 @@
 							"comments": "Damage multiplier on buildings"
 						},
 						{
-							"val": 0.5,
+							"val": 0.3,
 							"id": 12,
 							"props": {},
 							"comments": "proc chance"
@@ -16936,7 +17123,7 @@
 					"id": "SpikeTrap",
 					"values": [
 						{
-							"val": 6,
+							"val": 8,
 							"id": 8,
 							"props": {
 								"dataType": 1
@@ -16974,7 +17161,7 @@
 							"comments": "Life loss each regular update"
 						},
 						{
-							"val": 0.9,
+							"val": 0.8,
 							"id": 2,
 							"props": {},
 							"comments": "Slow factor"
@@ -19251,6 +19438,60 @@
 					}
 				},
 				{
+					"id": "OutsidersVillager",
+					"name": "Allies From Beyond",
+					"desc": "Miklagard is sending you new villagers.",
+					"duration": 0,
+					"proba": 0,
+					"props": {
+						"type": 0
+					},
+					"comments": "",
+					"icon": "OutsidersVillager",
+					"gfx": {
+						"file": "ui/icons/eventIcons.png",
+						"size": 24,
+						"x": 39,
+						"y": 0
+					}
+				},
+				{
+					"id": "OutsidersResourcesBase",
+					"name": "Exotic Luxury",
+					"desc": "Miklagard is sending you resources.",
+					"duration": 0,
+					"proba": 0,
+					"props": {
+						"type": 0
+					},
+					"comments": "",
+					"icon": "OutsidersResourcesBase",
+					"gfx": {
+						"file": "ui/icons/eventIcons.png",
+						"size": 24,
+						"x": 38,
+						"y": 0
+					}
+				},
+				{
+					"id": "OutsidersResourcesAdvanced",
+					"name": "Rare Goods Import",
+					"desc": "Miklagard is sending you rare ores.",
+					"duration": 0,
+					"proba": 0,
+					"props": {
+						"type": 0
+					},
+					"comments": "",
+					"icon": "OutsidersResourcesAdvanced",
+					"gfx": {
+						"file": "ui/icons/eventIcons.png",
+						"size": 24,
+						"x": 38,
+						"y": 0
+					}
+				},
+				{
 					"id": "Unfreeze",
 					"name": "Spring",
 					"desc": "The undead army will unfreeze and attack you at the beginning of the 5th summer. We must prepare to survive!",
@@ -20214,7 +20455,10 @@
 							"refill": 4,
 							"stock": 300
 						},
-						"marketSellRatio": 0
+						"marketSellRatio": 0,
+						"tradePriceOutsiders": 0.25,
+						"tradeQtyOutsiders": 2.5,
+						"boarOutsiderTradeFactor": 1
 					},
 					"inventory": {},
 					"isProductible": true,
@@ -20243,7 +20487,10 @@
 							"price": 1,
 							"refill": 6,
 							"stock": 200
-						}
+						},
+						"tradePriceOutsiders": 0.25,
+						"tradeQtyOutsiders": 2.5,
+						"boarOutsiderTradeFactor": 1
 					},
 					"inventory": {},
 					"isProductible": true,
@@ -20266,7 +20513,10 @@
 					"props": {
 						"tradePrice": 1,
 						"tradeQty": 2,
-						"relationValue": 0.01
+						"relationValue": 0.01,
+						"tradeRef": 10,
+						"tradePriceOutsiders": 0.5,
+						"tradeQtyOutsiders": 2.5
 					},
 					"inventory": {},
 					"isProductible": true,
@@ -20808,7 +21058,10 @@
 							"stock": 10,
 							"qtyBuy": 5,
 							"qtyCtrlBuy": 1
-						}
+						},
+						"tradePriceOutsiders": 0.25,
+						"tradeQtyOutsiders": 0.05,
+						"boarOutsiderTradeFactor": 3
 					},
 					"inventory": {},
 					"isProductible": false,
@@ -20839,7 +21092,10 @@
 							"stock": 5,
 							"qtyBuy": 5,
 							"qtyCtrlBuy": 1
-						}
+						},
+						"tradePriceOutsiders": 0.25,
+						"tradeQtyOutsiders": 0.05,
+						"boarOutsiderTradeFactor": 3
 					},
 					"inventory": {},
 					"isProductible": false,
@@ -20864,7 +21120,7 @@
 					"isProductible": true,
 					"texts": {
 						"name": "Commercial Influence",
-						"desc": "[Prestige] can be earned by exploiting Great Trade Routes via a [Lighthouse].",
+						"desc": "[Prestige] can be earned by trading with [OutsidersFaction].",
 						"plural": {
 							"name": "Commercial Influence"
 						}
@@ -20895,8 +21151,10 @@
 						"tradePrice": 0.8,
 						"tradeRef": 10,
 						"tradeQty": 0.1,
-						"relationValue": 0.2
-					},
+						"relationValue": 0.2,
+						"tradePriceOutsiders": 0.4,
+						"tradeQtyOutsiders": 0.1
+					},					
 					"gfx": {
 						"file": "ui/resources/resources.png",
 						"size": 24,
@@ -22194,6 +22452,12 @@
 					"kind": null
 				},
 				{
+					"typeStr": "4",
+					"name": "tradePriceOutsiders",
+					"opt": true,
+					"kind": null
+				},
+				{
 					"typeStr": "8",
 					"name": "replaceDeprecated",
 					"opt": true,
@@ -22204,6 +22468,19 @@
 					"name": "market",
 					"opt": true,
 					"kind": null
+				},
+				{
+					"typeStr": "4",
+					"name": "tradeQtyOutsiders",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "4",
+					"name": "boarOutsiderTradeFactor",
+					"opt": true,
+					"kind": null,
+					"documentation": "Factor used by the boar while he does have his tech (bartering)"
 				}
 			]
 		},
@@ -22599,6 +22876,21 @@
 					},
 					"flags": 12
 				},
+				{
+					"id": "Outsiders",
+					"texts": {
+						"title": "Trade",
+						"desc": "Develop your economy and earn enough influence by trading with [OutsidersFaction] to become their privileged trading partner."
+					},
+					"banner": {
+						"file": "ui/inGame/victoryBanners.png",
+						"size": 1,
+						"x": 0,
+						"y": 220,
+						"width": 220,
+						"height": 110
+					}
+				},				
 				{
 					"id": "Lore",
 					"texts": {
@@ -23273,7 +23565,7 @@
 				{
 					"typeStr": "6:unit",
 					"name": "unit",
-					"kind": null
+					"opt": true
 				},
 				{
 					"typeStr": "8",
@@ -23282,7 +23574,7 @@
 				{
 					"typeStr": "6:building",
 					"name": "place",
-					"kind": null
+					"opt": true
 				},
 				{
 					"typeStr": "8",
@@ -24430,6 +24722,109 @@
 						"size": 24,
 						"x": 11,
 						"y": 9
+					}
+					},
+					{
+					"id": "OutsidersFaction",
+					"texts": {
+						"name": "Miklagard"
+					},
+					"franceTexts": {},
+					"ethnicities": [],
+					"otherBuildings": [],
+					"alignmentSteps": [
+						{
+							"step": 0,
+							"desc": "You receive +::value3:: [::villager_kind::] every ::value4:: months. (In population limit)",
+							"name": "Allies From Afar",
+							"icon": {
+								"file": "ui/diplomacy/DiplomacySteps.png",
+								"size": 48,
+								"x": 28,
+								"y": 0
+							}
+						},
+						{
+							"step": 1,
+							"desc": "You receive resources, Lore, and Fame by boat every ::value5:: months.",
+							"name": "Exotic Luxury",
+							"icon": {
+								"file": "ui/diplomacy/DiplomacySteps.png",
+								"size": 48,
+								"x": 28,
+								"y": 1
+							}
+						},
+						{
+							"step": 2,
+							"desc": "You receive Stone and Iron by boat every ::value6:: months.",
+							"name": "Rare Goods Import",
+							"icon": {
+								"file": "ui/diplomacy/DiplomacySteps.png",
+								"size": 48,
+								"x": 28,
+								"y": 2
+							}
+						},
+						{
+							"step": 3,
+							"desc": "Achieve the Trade Victory",
+							"name": "Miklagard Partner",
+							"icon": {
+								"file": "ui/diplomacy/DiplomacySteps.png",
+								"size": 48,
+								"x": 28,
+								"y": 3
+							}
+						}
+					],
+					"values": [
+						{
+							"id": 1,
+							"val": 10,
+							"comment": "When a faction is defeated, the negative flux applied to its outsiders shares."
+						},
+						{
+							"id": 2,
+							"val": 1000,
+							"comment": "Base number of krown in bank"
+						},
+						{
+							"id": 3,
+							"val": 200,
+							"comment": "The amount other neutral faction put in the bank at the start of the game."
+						},
+						{
+							"id": 4,
+							"val": 1,
+							"comment": "Step 1 : number of villagers received by boat"
+						},
+						{
+							"id": 5,
+							"val": 8,
+							"comment": "Step 1 : time in month for new villagers"
+						},
+						{
+							"id": 6,
+							"val": 6,
+							"comment": "Step 2 : time in month for base resources (see cst for detailed res production)"
+						},
+						{
+							"id": 7,
+							"val": 6,
+							"comment": "Step 3 : time in month for advanced resources(see cst for detailed res production)"
+						}
+					],
+					"befriendGift": [],
+					"eradicationReward": [],
+					"props": {
+						"valueTrade": 1
+					},
+					"gfx": {
+						"file": "ui/resources/resources.png",
+						"size": 24,
+						"x": 20,
+						"y": 0
 					}
 				}
 			],
@@ -27204,7 +27599,7 @@
 			"lines": [],
 			"columns": [
 				{
-					"typeStr": "5:FameGain,Value,Value2,Value3,Value4,Value5,Value6,Value7,Value8",
+					"typeStr": "5:FameGain,Value,Value2,Value3,Value4,Value5,Value6,Value7,Value8,Bonus1",
 					"name": "id"
 				},
 				{
@@ -29250,7 +29645,7 @@
 					"produce": [
 						{
 							"r": "Prescience",
-							"q": 3.1,
+							"q": 3,
 							"props": {
 								"showUi": true
 							},
@@ -29336,7 +29731,7 @@
 						},
 						{
 							"r": "Lore",
-							"q": 0.1,
+							"q": 0.15,
 							"props": {
 								"showUi": true
 							},
@@ -29403,7 +29798,7 @@
 					"produce": [
 						{
 							"r": "Happy",
-							"q": 3.5,
+							"q": 3,
 							"props": {
 								"showUi": true
 							},
@@ -31654,7 +32049,7 @@
 					"produce": [],
 					"phases": [
 						{
-							"pv": 65,
+							"pv": 60,
 							"atk": 12,
 							"model": "PackBrawler",
 							"lootTable": [
@@ -31715,7 +32110,7 @@
 					"produce": [],
 					"phases": [
 						{
-							"pv": 65,
+							"pv": 60,
 							"atk": 12,
 							"model": "Bearserker",
 							"lootTable": [
@@ -31735,23 +32130,23 @@
 							],
 							"values": [
 								{
-									"val": 0.15,
+									"val": 0.25,
 									"id": 0,
 									"comment": "Added defence per level up"
 								},
 								{
-									"val": 0.57,
+									"val": 0.75,
 									"id": 7,
 									"comment": "XP to Wood",
 									"dyn": {
 										"res": "Wood",
-										"ratio": 0.57,
+										"ratio": 0.75,
 										"max": 80
 									}
 								}
 							],
 							"texts": {},
-							"def": 11
+							"def": 8
 						}
 					],
 					"props": {
@@ -31798,7 +32193,7 @@
 					"produce": [],
 					"phases": [
 						{
-							"pv": 65,
+							"pv": 60,
 							"atk": 15,
 							"model": "Wolfserker",
 							"lootTable": [
@@ -31823,12 +32218,12 @@
 									"comment": "Added attack power per level up"
 								},
 								{
-									"val": 0.57,
+									"val": 0.75,
 									"id": 7,
 									"comment": "XP to Food",
 									"dyn": {
 										"res": "Food",
-										"ratio": 0.57,
+										"ratio": 0.75,
 										"max": 80
 									}
 								}
@@ -31881,7 +32276,7 @@
 					"produce": [],
 					"phases": [
 						{
-							"pv": 65,
+							"pv": 60,
 							"atk": 12,
 							"model": "Foxserker",
 							"lootTable": [
@@ -31916,12 +32311,12 @@
 									"comment": "Added range per level up"
 								},
 								{
-									"val": 0.38,
+									"val": 0.5,
 									"id": 7,
 									"comment": "XP to Money",
 									"dyn": {
 										"res": "Money",
-										"ratio": 0.38,
+										"ratio": 0.5,
 										"max": 80
 									}
 								}
@@ -31929,7 +32324,7 @@
 							"texts": {},
 							"def": 7,
 							"range": 15,
-							"moveSpeed": 2.45
+							"moveSpeed": 2.3
 						}
 					],
 					"props": {
@@ -31964,7 +32359,7 @@
 					"produce": [],
 					"phases": [
 						{
-							"pv": 75,
+							"pv": 60,
 							"atk": 12,
 							"model": "Boarserker",
 							"lootTable": [
@@ -31989,12 +32384,12 @@
 									"comment": "Added health per level up"
 								},
 								{
-									"val": 0.38,
+									"val": 0.5,
 									"id": 7,
 									"comment": "XP to Lore",
 									"dyn": {
 										"res": "Lore",
-										"ratio": 0.38,
+										"ratio": 0.5,
 										"max": 80
 									}
 								}
@@ -57567,7 +57962,7 @@
 					"id": "MuspelheimTower",
 					"texts": {
 						"name": "Muspelheim Tower",
-						"desc": "Protects this zone with arrows inflicting area damages.",
+						"desc": "Protects this zone with burning arrows.",
 						"plural": {
 							"name": "Defense Towers"
 						}
@@ -60045,12 +60440,21 @@
 						"flags": 0
 					},
 					"texts": {
-						"name": "Lighthouse",
-						"desc": "Allows you to create Great Routes. Must be built on a [Port]. This one is invulnerable to Kraken attack events.",
+							"name": "Lighthouse",
+						"desc": "Increases the production of the dock it is attached to and protects it against Kraken attack events.",
 						"plural": {
 							"name": "Lighthouses"
 						}
-					}
+					},
+					"values": [
+						{
+							"val": 1.2,
+							"id": 2,
+							"props": {
+								"type": 0
+							}
+						}
+					]
 				},
 				{
 					"id": "Lure",
@@ -60454,7 +60858,7 @@
 					},
 					"texts": {
 						"name": "Lighthouse",
-						"desc": "Allows you to create Great Routes. Must be built on a [RavenPort]. This one is invulnerable to Kraken attack events.",
+						"desc": "Protects the Harbor it is attached to against Kraken attack events.",
 						"plural": {
 							"name": "Lighthouses"
 						}
@@ -62929,7 +63333,7 @@
 							"cost": [
 								{
 									"res": "Wood",
-									"qty": 240
+									"qty": 200
 								},
 								{
 									"res": "Stone",
@@ -70583,7 +70987,11 @@
 					"props": {
 						"maxNb": 1,
 						"creatorBased": true,
-						"clanType": 0
+						"clanType": 0,
+						"relicData": {
+							"territoryLengthFactor": 0.5,
+							"totalFactor": 10
+						}
 					},
 					"padProps": {
 						"buildCategory": 4
@@ -71760,7 +72168,7 @@
 							"comments": "Deer & Fish boost"
 						},
 						{
-							"val": 75,
+							"val": 50,
 							"id": 11,
 							"props": {
 								"type": 1
@@ -79938,6 +80346,12 @@
 					"name": "anvilBonuses",
 					"opt": true,
 					"kind": null
+				},
+				{
+					"typeStr": "17",
+					"name": "relicData",
+					"opt": true,
+					"kind": null
 				}
 			]
 		},
@@ -80831,6 +81245,28 @@
 			]
 		},
 		{
+			"name": "building@props@relicData",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "4",
+					"name": "territoryLengthFactor",
+					"defaultValue": 0.5
+				},
+				{
+					"typeStr": "4",
+					"name": "totalFactor",
+					"kind": null,
+					"defaultValue": 10
+				}
+			]
+		},
+		{
 			"name": "building@props@anvilBonuses@cost",
 			"props": {
 				"hide": true
@@ -81468,7 +81904,7 @@
 						},
 						{
 							"newTech": "MilitaryFunds",
-							"oldTech": "MilitaryStrategy"
+							"oldTech": "Weaponsmith"
 						},
 						{
 							"newTech": "GreatExplorers",
@@ -81605,7 +82041,7 @@
 						},
 						{
 							"newTech": "WinterFestival",
-							"oldTech": "FreyaBlessing"
+							"oldTech": "Mining"
 						}
 					],
 					"fame": [
@@ -84138,12 +84574,7 @@
 							]
 						}
 					],
-					"specificTechs": [
-						{
-							"oldTech": "Lumber",
-							"newTech": "Lumber"
-						}
-					],
+					"specificTechs": [],
 					"fame": [
 						{
 							"tech": "PillarsOfWisdom"
@@ -84252,11 +84683,11 @@
 							"desc": "Two civilian units enter the [BrawlerCamp]. Only one emerges and becomes a [PackBrawler]—a powerful unit worthy of becoming a berserker.",
 							"values": [
 								{
-									"val": 45,
+									"val": 40,
 									"id": "CPackBrawlerRecruitBaseCost"
 								},
 								{
-									"val": 5,
+									"val": 10,
 									"id": "CPackBrawlerRecruitCostIncrease",
 									"comments": "Increapse per already owned military unit"
 								}
@@ -84536,6 +84967,547 @@
 				},
 				"displayIcon": "gfx"
 			}
+		},
+		{
+			"name": "ai",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "17",
+					"name": "props",
+					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "comments"
+				}
+			],
+			"lines": [
+				{
+					"id": "ConsommationOverride",
+					"comments": "",
+					"props": {
+						"unitsConsommationOverride": [
+							{
+								"difficulty": [
+									{
+										"unit": "Villager",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "Woodcutter",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "Scout",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "Hunter",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "Farmer",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "Fisherman",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "Warrior",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "AxeWielder",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									},
+									{
+										"unit": "ShieldBearer",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 1
+											}
+										]
+									}
+								]
+							},
+							{
+								"difficulty": [
+									{
+										"unit": "Villager",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.8
+											}
+										]
+									},
+									{
+										"unit": "Woodcutter",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.8
+											}
+										]
+									},
+									{
+										"unit": "Hunter",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.8
+											}
+										]
+									},
+									{
+										"unit": "Farmer",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.8
+											}
+										]
+									},
+									{
+										"unit": "Fisherman",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.8
+											}
+										]
+									}
+								]
+							},
+							{
+								"difficulty": [
+									{
+										"unit": "Villager",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "Woodcutter",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "Scout",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "Hunter",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "Farmer",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "Fisherman",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "Warrior",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "AxeWielder",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "ShieldBearer",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									},
+									{
+										"unit": "PackBrawler",
+										"resources": [
+											{
+												"res": "Food",
+												"factor": 0.5
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "FoodFlux",
+					"props": {
+						"curve": [
+							0,
+							1,
+							-0.5,
+							0,
+							0.033351293103448275,
+							0,
+							0.10005387931034483,
+							0.40284926470588234,
+							-0.082817739338743,
+							0.0024732092117287752,
+							0.2,
+							-0.00588235294117645,
+							1,
+							0,
+							-0.049946120689655205,
+							0.33763786764705883,
+							-0.5,
+							0
+						],
+						"yearRatio": 4
+					},
+					"comments": ""
+				},
+				{
+					"id": "WoodFlux",
+					"props": {
+						"curve": [
+							0,
+							1,
+							-0.5,
+							0,
+							0.033351293103448275,
+							0,
+							0.10005387931034483,
+							0.40284926470588234,
+							-0.082817739338743,
+							0.0024732092117287752,
+							0.2,
+							-0.00588235294117645,
+							1,
+							0,
+							-0.049946120689655205,
+							0.33763786764705883,
+							-0.5,
+							0
+						],
+						"yearRatio": 4
+					},
+					"comments": ""
+				},
+				{
+					"id": "MoneyFlux",
+					"props": {
+						"curve": [
+							0,
+							1,
+							-0.5,
+							0,
+							0.033351293103448275,
+							0,
+							0.10005387931034483,
+							0.40284926470588234,
+							-0.082817739338743,
+							0.0024732092117287752,
+							0.2,
+							-0.00588235294117645,
+							1,
+							0,
+							-0.049946120689655205,
+							0.33763786764705883,
+							-0.5,
+							0
+						],
+						"yearRatio": 4
+					},
+					"comments": ""
+				},
+				{
+					"id": "AllowedGoals",
+					"props": {
+						"goalsForLevel": [
+							{
+								"levels": [
+									{
+										"goal": [
+											0
+										]
+									},
+									{
+										"goal": [
+											1
+										]
+									},
+									{
+										"goal": [
+											2
+										]
+									},
+									{
+										"goal": [
+											3
+										]
+									},
+									{
+										"goal": [
+											4
+										]
+									}
+								]
+							},
+							{
+								"levels": [
+									{
+										"goal": [
+											0
+										]
+									},
+									{
+										"goal": [
+											1
+										]
+									},
+									{
+										"goal": [
+											2
+										]
+									},
+									{
+										"goal": [
+											3
+										]
+									},
+									{
+										"goal": [
+											4
+										]
+									},
+									{
+										"goal": [
+											6
+										]
+									},
+									{
+										"goal": [
+											5
+										]
+									}
+								]
+							}
+						]
+					},
+					"comments": ""
+				}
+			],
+			"separators": [],
+			"props": {
+				"editor": {
+					"categories": [
+						"Clan"
+					]
+				}
+			}
+		},
+		{
+			"name": "ai@props",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "8",
+					"name": "unitsConsommationOverride",
+					"opt": true
+				},
+				{
+					"typeStr": "19",
+					"name": "curve",
+					"opt": true
+				},
+				{
+					"typeStr": "4",
+					"name": "yearRatio",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "8",
+					"name": "goalsForLevel",
+					"opt": true,
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "ai@props@unitsConsommationOverride",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "8",
+					"name": "difficulty",
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "ai@props@goalsForLevel",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "8",
+					"name": "levels"
+				}
+			]
+		},
+		{
+			"name": "ai@props@goalsForLevel@levels",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "9:AIGoal",
+					"name": "goal",
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "ai@props@unitsConsommationOverride@difficulty",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:unit",
+					"name": "unit",
+					"kind": null
+				},
+				{
+					"typeStr": "8",
+					"name": "resources",
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "ai@props@unitsConsommationOverride@difficulty@resources",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:resource",
+					"name": "res",
+					"kind": null
+				},
+				{
+					"typeStr": "4",
+					"name": "factor",
+					"kind": null,
+					"defaultValue": 1
+				}
+			]
 		},
 		{
 			"name": "clan@bonuses",
@@ -85627,6 +86599,9 @@
 							"ref": "AttackPower",
 							"values": [
 								{
+									"val": 1.05
+								},
+								{
 									"val": 1.1
 								},
 								{
@@ -85634,9 +86609,6 @@
 								},
 								{
 									"val": 1.2
-								},
-								{
-									"val": 1.25
 								}
 							]
 						},
@@ -101967,11 +102939,11 @@
 						"difficultyAdjust": -1
 					},
 					"teams": [
-						4
+						2
 					],
 					"excludedClans": [],
 					"teamsCoop": [
-						12
+						7
 					],
 					"victoryVals": [],
 					"description": "Other clans are thirsty for your blood. Survive and send them to Valhala.",
@@ -102005,11 +102977,11 @@
 						"difficultyAdjust": -1
 					},
 					"teams": [
-						4
+						2
 					],
 					"excludedClans": [],
 					"teamsCoop": [
-						12
+						7
 					],
 					"victoryVals": [
 						{
@@ -102680,7 +103652,7 @@
 						"IAlevelAdjust": -1
 					},
 					"teams": [
-						4
+						2
 					],
 					"excludedClans": [
 						{
@@ -102691,7 +103663,7 @@
 						}
 					],
 					"teamsCoop": [
-						12
+						7
 					],
 					"victoryVals": [],
 					"description": "What if all your enemies are around you? Don't let them expand too much!",
@@ -103019,7 +103991,7 @@
 						]
 					},
 					"teams": [
-						4
+						2
 					],
 					"excludedClans": [
 						{
@@ -103027,7 +103999,7 @@
 						}
 					],
 					"teamsCoop": [
-						12
+						7
 					],
 					"victoryVals": [],
 					"description": "Don't be too slow to expand. Skirmisher are powerful and can bring an easy victory.",
@@ -108370,7 +109342,9 @@
 							"comments": "Additionnal dens per player"
 						}
 					],
-					"props": {}
+					"props": {
+						"hidden": true
+					}
 				},
 				{
 					"id": "ScarceResources",
@@ -108597,7 +109571,9 @@
 					"id": "NoFoxDens",
 					"desc": "",
 					"values": [],
-					"props": {}
+					"props": {
+						"hidden": true
+					}
 				},
 				{
 					"id": "BifrostTower",
@@ -111940,7 +112916,7 @@
 				},
 				{
 					"id": "BLeggedBranch",
-					"desc": "[OwlBranch]s with clan unique knowldeges become [LeggedOwlBranch]s and can move.",
+					"desc": "[OwlBranch]s with clan unique knowledge become [LeggedOwlBranch]s and can move.",
 					"baseVals": [],
 					"advancedVals": [],
 					"props": {
@@ -113024,7 +114000,7 @@
 						}
 					],
 					"props": {
-						"bifrostSelectionWeight": 1
+						"bifrostSelectionWeight": 20
 					},
 					"gfx": {
 						"gfx": {
@@ -113068,7 +114044,7 @@
 						}
 					],
 					"props": {
-						"bifrostSelectionWeight": 1
+						"bifrostSelectionWeight": 20
 					},
 					"gfx": {
 						"gfx": {
@@ -113124,7 +114100,7 @@
 						}
 					],
 					"props": {
-						"bifrostSelectionWeight": 1
+						"bifrostSelectionWeight": 20
 					},
 					"gfx": {
 						"gfx": {
@@ -113168,7 +114144,7 @@
 						}
 					],
 					"props": {
-						"bifrostSelectionWeight": 1
+						"bifrostSelectionWeight": 20
 					},
 					"gfx": {
 						"gfx": {
@@ -113248,7 +114224,7 @@
 						}
 					],
 					"props": {
-						"bifrostSelectionWeight": 1
+						"bifrostSelectionWeight": 20
 					},
 					"gfx": {
 						"gfx": {
@@ -147101,6 +148077,48 @@
 					}
 				},
 				{
+					"id": "OutsidersVillager",
+					"gfx": {
+						"file": "ui/notify/notifyIcons.png",
+						"size": 48,
+						"x": 7,
+						"y": 8
+					},
+					"props": {
+						"portrait": 0
+					},
+					"notifyKind": 1,
+					"sfx": "sfx/use_money.wav"
+				},
+				{
+					"id": "OutsidersResourcesBase",
+					"gfx": {
+						"file": "ui/notify/notifyIcons.png",
+						"size": 48,
+						"x": 6,
+						"y": 8
+					},
+					"props": {
+						"portrait": 0
+					},
+					"notifyKind": 1,
+					"sfx": "sfx/use_money.wav"
+				},
+				{
+					"id": "OutsidersResourcesAdvanced",
+					"gfx": {
+						"file": "ui/notify/notifyIcons.png",
+						"size": 48,
+						"x": 8,
+						"y": 8
+					},
+					"props": {
+						"portrait": 0
+					},
+					"notifyKind": 1,
+					"sfx": "sfx/use_money.wav"
+				},
+				{
 					"id": "WaitingLore",
 					"gfx": {
 						"file": "ui/notify/notifyIcons.png",
@@ -155349,6 +156367,10 @@
 							{
 								"val": "China",
 								"name": "Mainland China"
+							},
+							{
+								"val": "Russia",
+								"name": "Russia"
 							}
 						]
 					},
@@ -157824,9 +158846,9 @@
 					}
 				},
 				{
-					"id": "SquirrelSharedMealNoMalus",
+					"id": "SquirrelAllyStoveProduction",
 					"texts": {
-						"desc": "Shared Meals give 100% of their effects to ally clans."
+						"desc": "[Squirrel] gains the ingredients of the ally zones containing a [Stove]."
 					},
 					"values": [],
 					"clan": "Squirrel"
@@ -161895,6 +162917,48 @@
 				{
 					"name": "TakeAll",
 					"args": []
+				}
+			]
+		},
+		{
+			"name": "AIGoal",
+			"cases": [
+				{
+					"name": "Defend",
+					"args": []
+				},
+				{
+					"name": "Happiness",
+					"args": []
+				},
+				{
+					"name": "Expand",
+					"args": []
+				},
+				{
+					"name": "Wealth",
+					"args": []
+				},
+				{
+					"name": "Conquest",
+					"args": []
+				},
+				{
+					"name": "Event",
+					"args": []
+				},
+				{
+					"name": "Diplomacy",
+					"args": []
+				},
+				{
+					"name": "Custom",
+					"args": [
+						{
+							"name": "specifier",
+							"typeStr": "1"
+						}
+					]
 				}
 			]
 		}
